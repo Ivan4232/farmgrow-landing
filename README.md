@@ -1,2 +1,0 @@
-# farmgrow-landing
-"Farm grow"
