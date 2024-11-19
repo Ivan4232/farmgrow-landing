@@ -1,7 +1,70 @@
-.div--header{
-  margin-left: 16px;
-  text-transform: none;
+:root {
+ --primary-color: #2AA915;
+ --secondary-color: #30C917;
+ --text-color: #062010;
+ background-color: #fff;
+font-family: 'Montserrat', sans-serif;
+--title-font-size: 24px;
+--primary-font-size: 40px;
+  line-height: 1.5;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 600;
+  line-height: 1.5;
+  color: #062010;
+  background-color:#fff;
+}
+
+h1 {
+  margin: 32px 44px 16px 16px;
+  height: 96px;
+  width: 300px;
+  font-size: 700;
+}
+
+h2 {
+  height: 29px;
+  width: 300px;
+  font-size: 700;
+}
+
+p{
+  color: #676767;
+}
+
+.header{
+  max-width: 360px;
+  max-height: 65px;
+}
+
 .logo{
-  
+  margin-top: 35px;
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph-hero{
+  width: 245px;
+  height: 78px;
+  color: #000000;
+  margin: 16px 99px 24px 16px;
+}
+
+.highlight-color{
+  color: #2AA915;
+}
+
+.header-fon{
+ position: absolute;
+ z-index: 0;
+  width: 100%;
 }
