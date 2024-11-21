@@ -39,13 +39,47 @@ p{
   color: #676767;
 }
 
+button{
+  font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    width: 140px;
+  height: 40px;
+border-radius: 8px;
+color: #2aa915;
+border: none;
+cursor: pointer;
+}
+
+.btn{
+  border: 2px solid #ee3581;
+    border-radius: 8px;
+  color: #ef3581;
+}
+
+.btn-farm{
+  background: rgba(42, 169, 21, 0.18);
+}
+
+.btn-taitl{
+  font-weight: 500;
+    color: #fff;
+    border-radius: 6px;
+    background: linear-gradient(130deg, #30c917 0%, #279a13 100%);
+}
+
+.btn-and{
+  border-radius: 24px;
+    width: 152px;
+}
+
 .hero-section{
   background: linear-gradient(90deg, #f8fff6 16.74%, rgba(248, 255, 246, 0.58) 79.12%, rgba(248, 255, 246, 0.1) 100%);
 }
 
 .bg-primary{
-  background: linear-gradient(180deg, rgba(248, 255, 246, 0) 0%, rgba(248, 255, 246, 0.47) 8.43%, #f8fff6 21.17%, rgba(232, 249, 229, 0) 100%);
-}
+  background: linear-gradient(180deg, rgba(248, 255, 246, 0) 0%, rgba(248, 255, 246, 0.47) 8.43%, #f8fff6 21.17%, rgba(232, 249, 229, 0) 100%); 
+} 
 
 .title {
   font-weight: 500;
@@ -82,6 +116,17 @@ font-weight: 500;
  color: #062010;
 }
 
+.cards-div{
+border-radius: 16px;
+  width: 328px;
+  height: 300px;
+  background-color: #BBDBB6;
+}
+
+.cards-div-two{
+border-radius: 18px;
+}
+
 .h2-cards{
   font-weight: 600;
   font-size: 24px;
@@ -97,6 +142,8 @@ font-weight: 500;
 .highlight-color{
   color: #2AA915;
 }
+
+
 
 .and-section{
   background: linear-gradient(0deg, rgba(42, 169, 21, 0.37) 0%, rgba(42, 169, 21, 0) 100%);
