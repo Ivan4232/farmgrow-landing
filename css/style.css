@@ -151,7 +151,7 @@ background: linear-gradient(130deg, #30c917 0%, #279a13 100%);
 }
 
 .footer-headline{
-font-size: 24px;
+font-size: var(--title-font-size);
 }
 
 .footer{
