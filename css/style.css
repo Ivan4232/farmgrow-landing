@@ -4,11 +4,15 @@
   --text-color: #062010;
   --body-bg-color: #fff;
   --body-font-family:'Montserrat', sans-serif;
+  --body-text:'Helvetica',sans-serif;
+  --hero-text-font: 'Arial', sans-serif;
+  --text-font-family: 'Times New Roman', sans-serif;
   --text-font-size: 16px;
   --hero-title-font-size: 40px;
   --body-line-height: 1.5;
   --background-color-button: linear-gradient(130deg, #30c917 0%, #279a13 100%);
   --features-list-font-size: 18px;
+  --farm-font-size: 14px;
 }
 
 *,
@@ -26,22 +30,45 @@ body {
   color: var(--text-color);
   background-color: var(--body-bg-color);
   font-size: var(--text-font-size);
-  line-height: 1.2
+  line-height: 1.2;
 }
 
 .headline,
-.title-hero{
+.title{
   font-weight: 700;
   font-size: 24px;
     color: var(--text-color);
 }
 
-.title-hero{
+.btn,
+.btn-outline-light{
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: linear-gradient(130deg, #30c917 0%, #279a13 100%);
+}
+
+.btn-primary,
+.btn-outline-light{
+  font-weight: 600;
+  color: var(--primary-color);
+    background: rgba(42, 169, 21, 0.18);
+}
+
+ .btn-outline-light {
+   color: #ef3581;
+   border: 2px solid #ee3581;
+   background: #fbe4ee;
+ }
+ 
+.title{
   font-size: var(--hero-title-font-size);
 }
 
 .subtitle,
-.title{
+.title-hero{
   font-weight: 500;
 }
 
@@ -53,7 +80,7 @@ body {
 
 .features-list{
   font-weight: 400;
-    font-size: 13px;
+    font-size: var(--farm-font-size);
     color: #4b4b4b;
 }
 
@@ -78,12 +105,11 @@ font-weight: 700;
 .footer-link,
 .footer{
   font-size: var(--text-font-size);
-  font-weight: 600;
     color: #676767;
 }
 
 .farm-subtitle{
-    font-size: 14px;
+    font-size: var(--farm-font-size);
 }
 
 .farm-title{
@@ -103,26 +129,10 @@ font-weight: 600;
 
 .cards-box{
   font-weight: 500;
-    font-size: 14px;
+    font-size: var(--farm-font-size);
     line-height: 171%;
     color: var(--body-bg-color);
    background-color: #BBDBB6;
-}
-
-.btn,
-.btn-green{
-  font-size: var(--text-font-size);
-  font-weight: 600;
-    text-align: center;
-  background: rgba(42, 169, 21, 0.18);
-  border: none;
-}
-
-.btn-green,
-.btn-two{
-  font-weight: 500;
-  color: var(--body-bg-color);
-  background: var(--background-color-button);
 }
 
 .features-color,
@@ -147,15 +157,14 @@ font-weight: 600;
 }
 
 .highlight-color,
-.btn,
-.btn-green .highlight-color,
 .features-color,
 .features-title{
   color: var(--primary-color);
 } 
 
-.btn-one{
-  color: #ef3581;
-  border: 2px solid #ee3581;
-    background: #fbe4ee;
+  .nav-list{
+    font-weight: 400;
+    font-size: var(--features-list-font-size);
+    color: var(--text-color);
+    text-decoration: none;
   }
