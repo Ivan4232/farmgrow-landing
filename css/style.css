@@ -16,6 +16,10 @@
   --farm-font-size: 14px;
 }
 
+.outline {
+  box-shadow: 0 0 0 1px #000;
+}
+
 *,
 *::before,
 *::after {
