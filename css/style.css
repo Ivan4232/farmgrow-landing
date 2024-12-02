@@ -9,6 +9,7 @@
   --text-font-family: 'Times New Roman', sans-serif;
   --text-font-size: 16px;
   --hero-title-font-size: 40px;
+  --body-text-font-size: 24px;
   --body-line-height: 1.5;
   --background-color-button: linear-gradient(130deg, #30c917 0%, #279a13 100%);
   --features-list-font-size: 18px;
@@ -23,6 +24,13 @@
   padding: 0;
 }
 
+ @font-face {
+  font-family: 'Montserrat';
+  src: url("https: //fonts.google.com/specimen/Montserrat") format("woff2");
+  font-style: normal;
+  font-display: swap;
+} 
+
 body {
   font-family: var(--body-font-family);
   font-weight: 600;
@@ -36,7 +44,7 @@ body {
 .headline,
 .title{
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--body-text-font-size);
     color: var(--text-color);
 }
 
@@ -123,7 +131,7 @@ font-weight: 700;
 
 .title-cards{
 font-weight: 600;
- font-size: 24px;
+ font-size: var(--body-text-font-size);
   color: var(--body-bg-color);
 }
 
@@ -142,7 +150,7 @@ font-weight: 600;
 }
 
 .footer-headline{
-  font-size: 24px;
+  font-size: var(--body-text-font-size);
 }
 
 .footer{
