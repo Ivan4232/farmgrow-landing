@@ -176,3 +176,32 @@ font-weight: 600;
     color: var(--text-color);
     text-decoration: none;
   }
+
+  .title-list{
+    display: flex;
+    justify-content: start;
+  }
+  
+  .outline{
+    border: 2px solid #062010;
+    margin: 0 10px ;
+}
+
+.container{
+  display: flex;
+}
+
+.features-sublist{
+  border-radius: 16px;
+    width: 280px;
+    height: 204px;
+    box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
+      background: #fff;
+      margin-bottom: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+}
+
+.info-sublist{
+  display: flexbox;
+}
