@@ -51,7 +51,7 @@ body {
 .btn,
 .btn-outline-light{
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--text-font-size);
   text-align: center;
   border: none;
   color: #fff;
@@ -118,11 +118,15 @@ font-weight: 700;
 
 .farm-subtitle{
     font-size: var(--farm-font-size);
+    margin-top: 4px;
 }
 
 .farm-title{
     font-size: var(--features-list-font-size);
     color: #062010;
+    margin-top: var(--body-text-font-size);
+    margin-right: var(--hero-title-font-size);
+    margin-left: var(--text-font-size);
 }
 
 .farm-list{
@@ -192,9 +196,9 @@ font-weight: 600;
 }
 
 .features-sublist{
-  border-radius: 16px;
-    width: 280px;
-    height: 204px;
+  border-radius: var(--text-font-size);
+    max-width: 280px;
+    max-height: 204px;
     box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
       background: #fff;
       margin-bottom: 10px;
@@ -202,6 +206,37 @@ font-weight: 600;
       grid-template-columns: 1fr;
 }
 
+.info-list{
+  display: flex;
+  list-style-type: none;
+}
+
 .info-sublist{
   display: flexbox;
+  border: 2px solid rgba(42, 169, 21, 0.2);
+  border-radius: var(--text-font-size);
+  min-width: 192px;
+  min-height: 174px;
+  box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
+  background: #fff;
+  margin: 0 5px;
+}
+
+.farm-sublist,
+.auto-sublist{
+border-radius: var(--text-font-size);
+  max-width: 282px;
+  max-height: 153px;
+  box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
+    background: #fff;
+    margin: 32px 0;
+}
+
+.farm-list-img,
+.auto-list-img{
+  margin-right: 12px;
+}
+
+.farm-list-div{
+  display: flex;
 }
