@@ -84,7 +84,7 @@ body {
 }
 
 .subtitle,
-.title-hero {
+.title-hero{
   font-weight: 500;
 }
 
@@ -145,6 +145,7 @@ body {
   font-weight: 600;
   font-size: var(--body-text-font-size);
   color: var(--body-bg-color);
+  z-index: 1;
 }
 
 .cards-box {
@@ -153,6 +154,9 @@ body {
   line-height: 171%;
   color: var(--body-bg-color);
   background-color: #BBDBB6;
+  max-width: 328px;
+    max-height: 300px;
+    border-radius: 16px;
 }
 
 .features-color,
@@ -191,26 +195,25 @@ body {
 .nav-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+ min-height: 22px;
+ min-width: 346px;
   font-weight: 400;
   font-size: var(--features-list-font-size);
   color: var(--text-color);
 }
 
-
-.title-list {
-  display: flex;
-  justify-content: start;
-}
-
 .outline {
+  max-height: 64px;
+  max-width: 328px;
+  display: flex;
+  justify-content: flex-start;
   border: 2px solid #062010;
   margin: 0 10px;
 }
 
-.container {
+/* .container {
   display: flex;
-}
+} */
 
 .features-sublist {
   border-radius: var(--text-font-size);
@@ -223,10 +226,6 @@ body {
   grid-template-columns: 1fr;
 }
 
-.info-list {
-  display: flex;
-  list-style-type: none;
-}
 
 .info-sublist {
   display: flexbox;
@@ -249,11 +248,11 @@ body {
   margin: 32px 0;
 }
 
-.farm-list-img,
-.auto-list-img {
-  margin-right: 12px;
+.cards-img{
+  z-index: -5;
 }
 
-.farm-list-div {
-  display: flex;
+.container {
+max-width: 360px;
+text-align: start;
 }
