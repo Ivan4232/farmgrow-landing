@@ -154,9 +154,9 @@ body {
   line-height: 171%;
   color: var(--body-bg-color);
   background-color: #BBDBB6;
-  max-width: 328px;
-    max-height: 300px;
-    border-radius: 16px;
+  min-width: 328px;
+    min-height: 300px;
+    border-radius: 16px; 
 }
 
 .features-color,
@@ -175,9 +175,20 @@ body {
   background: #262626;
 }
 
+.footer-links-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .footer-link {
   text-decoration: none;
   color: #f8f8f8;
+  border: 1px solid #484848;
+    border-radius: 38px;
+    width: 143px;
+    height: 44px;
+    box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
+      background: #373737;
 }
 
 .highlight-color,
@@ -248,11 +259,17 @@ body {
   margin: 32px 0;
 }
 
-.cards-img{
-  z-index: -5;
+
+@media (max-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
 }
 
-.container {
-max-width: 360px;
-text-align: start;
+@media (max-width: 360px) {
+  .container-cards {
+    display: block;
+  }
 }

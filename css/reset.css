@@ -1,7 +1,13 @@
- @media (max-width: 800px){
-  .cards-box{
+@media (max-width: 768px) {
+  .container-cards {
     display: grid;
-      grid-template-columns: 1fr 1fr;
-      max-width: 528px
+    grid-template-columns: 1fr 1fr;
+    gap: 2;
   }
+}
+
+@media (max-width: 360px) {
+ .container-cards{
+   display: block;
  }
+}
