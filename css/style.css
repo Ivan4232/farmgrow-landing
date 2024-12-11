@@ -189,6 +189,7 @@ body {
     height: 44px;
     box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
       background: #373737;
+      margin-bottom: 16px;
 }
 
 .highlight-color,
@@ -260,16 +261,20 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px){
   .container-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
+  .footer-links-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 360px) {
   .container-cards {
-    display: block;
+     display: block; 
   }
 }
