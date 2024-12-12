@@ -53,11 +53,23 @@ body {
 .title {
   font-weight: 700;
   font-size: var(--body-text-font-size);
-  color: var(--text-color);
 }
 
 .headline{
   text-align: center;
+}
+
+.btn{
+  padding: 10px var(--text-font-size);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .btn,
@@ -75,6 +87,7 @@ body {
   font-weight: 600;
   color: var(--primary-color);
   background: rgba(42, 169, 21, 0.18);
+  padding: 10px var(--farm-font-size);
 }
 
 .btn-outline-light {
@@ -151,11 +164,12 @@ body {
   font-size: var(--text-font-size);
 }
 
-.title-cards {
+.card-title {
   font-weight: 600;
   font-size: var(--body-text-font-size);
   color: var(--body-bg-color);
   z-index: 1;
+  margin-bottom: 8px;
 }
 
 .cards-box {
@@ -166,9 +180,13 @@ body {
   background-color: #BBDBB6;
   min-width: 328px;
     min-height: 300px;
-    border-radius: 16px; 
+    border-radius: var(--text-font-size); 
+    padding: 102px var(--text-font-size) 24px;
+    max-width: 552px;
+ p {
+  margin-bottom: 24px;
 }
-
+}
 .features-color,
 .title-list,
 .paragraph-title {
@@ -270,12 +288,11 @@ body {
   margin: 32px 0;
 }
 
-
-@media (max-width: 360px) {
-  .container-cards {
-     display: block; 
-    }
-  }
+.card-columns{
+display: grid;
+justify-content: center;
+gap: 32px;
+}
 
 @media (min-width: 768px){
   .features-list{
@@ -294,9 +311,9 @@ body {
     .btn-features {
       margin-top: 80px;
     }
-  .container-cards {
+  .card-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:repeat(2, 1fr);
     gap: 24px;
   }
   .footer-links-box{
