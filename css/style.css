@@ -45,9 +45,15 @@ body {
 
 /* HEADER */
 
+.bg-wrapper{
+  background-image: url(../images/fons-two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
 .header{
-  background-image: url();
-  padding: 20px 0;
+  background-size: cover;
 }
 
 .nav{
@@ -64,6 +70,7 @@ justify-content: center;
   align-items: center;
   gap: 56px;
   flex-grow: 1;
+  display: none;
 }
 
 .nav-sublist{
@@ -75,18 +82,32 @@ justify-content: center;
   }
 }
 
-.img-header{
-  margin-left: auto;
-  background: 100%;
+.btn-header{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+min-width: 32px;
+min-height: 32px;
+margin-left: auto;
+align-items: center;
+border: none;
+background: #90d0fa5e;
+cursor: pointer;
 }
 
-.fons-one{
-  z-index: -2;
+.btn-header span {
+  min-width: 24px;
+  background: 100%;
+  min-height: 3px;
+  border-radius: 4px;
+  background-color: var(--text-color);
 }
 
 /* HERO */
 
 .hero-section{
+  background-repeat: no-repeat;
+    background-size: cover;
   padding-bottom: 40px;
 }
 
@@ -133,6 +154,26 @@ justify-content: center;
   line-height: 162%;
   color: #000;
   margin-bottom: 24px;
+  max-width: 250px;
+}
+
+.hero-video {
+  background-image: url(../images/hero-video.svg);
+  min-width: 900px;
+  min-height: 581px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 24px;
+  margin-bottom: 200px;
+  display: none;
+}
+
+.hero-video-img {
+  padding-left: 12px;
 }
 
 /*TITLE */
@@ -184,10 +225,6 @@ box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
 
 .paragraph-title {
   margin: 0 0 51px 10px;
-}
-
-.title-box-img{
-display: flex;
 }
 
      /* FEATURES */
@@ -279,6 +316,9 @@ display: flex;
   margin-top: 30px;
 }
   
+.info-container{
+  display: none;
+}
   
      /* FARM */
 
@@ -483,6 +523,14 @@ img{
   }
 }
 
+
+.btn-header-activ{
+  min-width: 162px;
+    min-height: 48px;
+border-radius: 8px;
+display: none;
+}
+
 .btn,
 .btn-outline-light {
   font-weight: 500;
@@ -521,13 +569,32 @@ img{
     max-height: 40px;
 }
 
+.hero-video-btn {
+  border-radius: 100%;
+  min-width: 137px;
+  min-height: 137px;
+}
 
 @media (min-width: 768px){
 
   /* HEADER */
-  .header{
+
+.bg-wrapper{
+  background-image: url(../images/fons-one.jpg);
+}
+
+.header{
 padding: 24px 0;
-  }
+}
+
+.nav-list,
+.btn-header-activ{
+  display: inline-flex;
+}
+
+.btn-header{
+  display: none;
+}
 
 .logo{
   margin-right: 150px;
@@ -550,7 +617,7 @@ padding: 24px 0;
   
   .container {
     margin: 0 auto;
-    padding: 0 156px;
+    padding: 0 350px;
   }
 
     .title{
@@ -558,14 +625,24 @@ padding: 24px 0;
       font-size: 72px;
     }
 
+.subtitle{
+  max-width: 450px;
+}
+
   .btn-outline-light{
   margin-top: 40px;
   }
 
   .img-hero{
- max-width: 662px;
+ min-width: 642px;
  min-height: 662px;
+ margin: 0 0 300px 20px;
   }
+
+.hero-video{
+  display: inline-flex;
+}
+
   /* TITLE  */
 
 .title-section{
@@ -575,6 +652,8 @@ padding: 24px 0;
   }
     
 .title-box-img{
+  display: flex;
+  justify-content: flex-end;
   flex-direction: row-reverse;
 }
 
