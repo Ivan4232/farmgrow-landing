@@ -63,9 +63,54 @@ body {
   background-color: #64DAF7;
 }
 
+.header{
+  height: 64px;
+  padding-top: 24px;
+  margin-bottom: 32px;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .nav{
 display: flex;
 justify-content: center;
+}
+
+.nav-visible{
+  .nav-list-container{
+ display: grid;
+  grid-template-rows: repeat(2, 1fr); 
+  justify-content: center;
+  align-items: center;
+  max-height: 266px;
+  }
+    .nav-list{
+      margin-top: 119px;
+    }
+        .mobile-menu-btn{
+          width: 24px;
+          height: 24px;
+          margin-right: 16px;
+          margin-top: 24px;
+
+          .span-one{
+            display: none;
+          }
+          .span-two,
+          .span-three{
+            position: absolute;
+              width: 18px;
+              height: 3px;
+              background: #bfbcb8;
+              transform: rotate(45deg);
+          }
+          .span-three{
+            transform: rotate(-45deg);
+          }
+        }
 }
 
 .nav-list-container {
@@ -75,9 +120,8 @@ justify-content: center;
   color: #fff;
   flex-wrap: wrap;
   align-items: center;
-  gap: 56px;
-  flex-grow: 1;
-  display: none; 
+  gap: 80px;
+  flex-grow: 1; 
 }
 
 .nav-visible {
@@ -88,24 +132,20 @@ justify-content: center;
   left: 0;
   position: fixed;
   z-index: 10;
-  justify-content: center;
   backdrop-filter: blur(3px);
-  display: flex;
 
-   .nav-list-container,
-   .btn-header-activ{
-    display: flex;
-  } 
+   .nav-list,
+  .btn-header-activ {
+      display: flex;
+      flex-direction: column;
+}  
 }
 
 .nav-list{
-  display: flex;
-  flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 80px;
-}
+  display: none;
+  gap: 40px;
+  align-items: center;
+  }
 
 .nav-sublist{
   a{
@@ -118,8 +158,8 @@ justify-content: center;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-width: 40px;
-height: 40px;
+width: 32px;
+height: 32px;
 margin-left: auto;
 align-items: center;
 border: none;
@@ -127,12 +167,13 @@ background: #90d0fa5e;
 cursor: pointer;
 position: relative;
 z-index: 11;
+
 }
 
 .mobile-menu-btn span {
   min-width: 24px;
   background: 100%;
-  min-height: 3px;
+  height: 3px;
   border-radius: 4px;
   background-color: var(--text-color);
 }
@@ -146,6 +187,8 @@ z-index: 11;
 .img-hero{
   min-width: 328px;
   aspect-ratio: 1/1;
+  position: relative;
+    z-index: 11;
 }
 
 .container {
@@ -187,7 +230,7 @@ z-index: 11;
   line-height: 162%;
   color: #000;
   margin-bottom: 24px;
-  max-width: 250px;
+  max-width: 245px;
 }
 
 .hero-video {
@@ -622,12 +665,11 @@ img{
   }
 }
 
-
-.btn-header-activ{
+.btn-header-activ {
   min-width: 162px;
-    min-height: 48px;
-border-radius: 8px;
-display: none;
+  min-height: 48px;
+  border-radius: 8px;
+  display: none;
 }
 
 .btn,
@@ -653,6 +695,8 @@ display: none;
   border: 2px solid #ee3581;
   background: #fbe4ee;
   margin-bottom: 40px;
+  width: 140px;
+    height: 40px;
 }
 
 .btn-features {
@@ -683,7 +727,8 @@ display: none;
 }
 
 .header{
-padding: 24px 0;
+padding: 20px 0;
+ height: 88px;
 }
 
 .btn-header-activ{
@@ -692,10 +737,13 @@ padding: 24px 0;
 
 .nav-list-container{
   display: flex;
-  flex-direction: none;
 }
 
 .nav-list{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
   color: var(--text-color);
 }
 
