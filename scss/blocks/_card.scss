@@ -1,0 +1,117 @@
+/* CARDS */
+
+.cards-section {
+  padding-top: 46px;
+  padding-bottom: 56px;
+}
+
+.cards-box {
+  font-weight: 500;
+  font-size: var(--farm-font-size);
+  line-height: 171%;
+  color: var(--body-bg-color);
+  background-color: #BBDBB6;
+      min-width: 328px;
+           border-radius: var(--border-radius-info);
+           padding: 102px 14px 24px 16px; 
+    position: relative;
+
+    
+    p {
+      margin-bottom: 24px;
+}
+}
+
+.cards-one {
+  &::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    min-width: 165px;
+    min-height: 140px;
+    top: 0;
+    right: 0;
+    background-image: url(../images/tractor.svg);
+    background-repeat: no-repeat;
+}
+}
+
+.cards-two {
+  &::before {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      min-width: 165px;
+      min-height: 140px;
+      top: 0;
+      right: 0;
+      background-image: url(../images/hand.svg);
+        background-repeat: no-repeat;
+}
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: var(--body-text-font-size);
+  color: var(--body-bg-color);
+  margin-bottom: 8px;
+  text-align: start;
+}
+
+.card-columns {
+  display: grid;
+  justify-content: center;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  /* CARDS  */
+  
+    .cards-section {
+      padding: 85px 0;
+    }
+  
+    .card-columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+  
+    .cards-box {
+      min-height: 400px;
+      min-width: 550px;
+      padding: 170px 64px 32px 32px;
+      font-size: 20px;
+      line-height: 130%;
+  
+      p {
+        margin-bottom: 32px;
+      }
+  
+      .btn {
+        min-width: 177px;
+        min-height: 56px;
+      }
+    }
+  
+    .cards-one {
+      &::before {
+        background-image: url(../images/tractor-two.svg);
+        min-height: 225px;
+        min-width: 272px;
+  
+      }
+    }
+  
+    .cards-two {
+      &::before {
+        background-image: url(../images/shovel-two.svg);
+        min-height: 240px;
+        min-width: 285px;
+      }
+    }
+  
+    .card-title {
+      margin-bottom: 16px;
+    }
+  }

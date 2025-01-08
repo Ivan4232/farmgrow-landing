@@ -1,0 +1,49 @@
+ /* PARTNERS */
+
+.partners-section{
+  padding: 33px 0 46px;
+}
+
+.partners-box{
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.partners-box-two{
+display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  /* PARTNERS  */
+  
+    .partners-section {
+      padding-top: 57px;
+      padding-bottom: 85px;
+  
+      .headline {
+        padding-bottom: 51px;
+      }
+    }
+  
+    .partners-box {
+      margin-bottom: 106px;
+    }
+  
+    .partners-box-two {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .img-partners {
+      padding-top: 29px;
+      max-width: 356px;
+      min-height: 92px;
+    }
+  
+    .img-partners-two {
+      min-width: 251px;
+      min-height: 74px;
+    }
+  }

@@ -1,0 +1,147 @@
+.hero-section{
+  padding-bottom: 40px;
+}
+
+.img-hero{
+  width: 328px;
+    height: 328px;
+  aspect-ratio: 1/1;
+}
+
+.container {
+  max-width: 360px;
+  padding: 0 16px;
+}
+
+.headline,
+.title-hero-box {
+  font-weight: 700;
+  font-size: var(--body-text-font-size);
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title-hero-box{
+  margin-bottom: 16px;
+  font-size: var(--hero-title-font-size);
+}
+
+.title {
+  font-weight: 700;
+  font-size: var(--hero-title-font-size);
+  width: 300px;
+  display: flex;
+  text-align: start;}
+
+  .highlight-color {
+    width: 300px;
+    height: 48px;
+    display: block;
+    color: #2aa915;
+  }
+
+
+.features-color,
+.title-list,
+.title-list-one,
+.paragraph-title,
+.subtitle,
+.title-hero{
+  font-weight: 500;
+}
+
+.subtitle {
+  font-weight: 400;
+  line-height: 162%;
+  color: #000;
+  margin-bottom: 24px;
+  max-width: 245px;
+}
+
+.hero-video {
+  background-image: url(../images/hero-video.svg);
+  width: 900px;
+  height: 581px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  margin: 0 0 148px 141px;
+  display: none;
+}
+
+.hero-video-img {
+  padding-left: 12px;
+}
+
+ .fons-three{
+position: fixed;
+width: 100%;
+  min-height: 100%;
+  padding-top: 100px;
+} 
+
+@media (min-width: 768px) {
+
+  /* HERO  */
+
+  .hero-section {
+    margin-bottom: 0;
+    padding: 0 54px 52px 0;
+  }
+
+  .hero-box {
+    display: flex;
+  }
+
+  .headline {
+    font-size: 48px;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 156px;
+  }
+
+  .title-hero{
+    margin-left: 27px;
+  }
+
+  .title-hero-box {
+    margin: 163px 0 53px;
+  }
+
+  .title {
+    font-size: 72px;
+    width: 552px;
+  }
+
+  .subtitle {
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+
+  .img-hero {
+    display: none;
+  }
+
+  .img-hero {
+    display: flex;
+    width: 642px;
+    height: 662px;
+    margin: 0 0 303px 27px;
+  }
+
+  .hero-video {
+    display: flex;
+  }
+}
