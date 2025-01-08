@@ -1,6 +1,5 @@
 /* montserrat-regular - latin */
 @font-face {
-<<<<<<< HEAD
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
@@ -42,7 +41,7 @@
   src: url("../fonts/montserrat-v29-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-=======
+ @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
@@ -73,4 +72,3 @@
   font-weight: 700;
   src: url("../fonts/montserrat-v29-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
->>>>>>> 9cc4f38aecc79f765840f739dc63566a602b5efa
