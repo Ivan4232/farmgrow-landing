@@ -52,8 +52,11 @@
 }
 
 .btn-features {
+  width: 140px;
+  height: 40px;
   display: block;
-  margin: 0 auto;
+  margin-left: 98px;
+  padding: 12px 16px 10px;
 }
 
 .btn-with-icon{
@@ -88,5 +91,14 @@
    font-size: 18px;
    margin-top: 0;
   padding: 0 0 2px 0;
+ }
+
+ .btn-features{
+  width: 177px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
  }
 }
