@@ -3,6 +3,10 @@
 .farm-section{
   padding: 34px 0 33px;
   display: flex;
+
+  .farm-item{
+    align-items: center;
+  }
 }
 
 .farm-list {
@@ -13,7 +17,6 @@
 .farm-item {
   font-size: 18px;
   margin: 0 0 32px 23px;
-  align-items: center;
   box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
     background: var(--body-bg-color);
   display: grid;
@@ -46,9 +49,13 @@ margin-bottom: 4px;
 .farm-subtitle,
 .farm-subtitle-two{
   font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 120%;
     color: #676767;
+}
+
+.farm-subtitle-two{
+  font-size: 16px;
 }
 
 .farm-col {
@@ -92,6 +99,14 @@ margin-bottom: 4px;
   
       .headline {
         margin-bottom: 70px;
+      }
+
+      .btn-primary {
+        margin: 0 0 0 154px;
+      }
+
+      .farm-subtitle{
+        font-size: 16px;
       }
     }
   
@@ -198,7 +213,6 @@ margin-bottom: 4px;
 
     .farm-col{
       .btn-primary{
-        margin: 0 0 0px 154px;
         padding: 10px 14px;
       }
     }

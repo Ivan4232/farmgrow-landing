@@ -793,6 +793,9 @@ li {
   padding: 34px 0 33px;
   display: flex;
 }
+.farm-section .farm-item {
+  align-items: center;
+}
 
 .farm-list {
   font-size: var(--text-font-size);
@@ -802,7 +805,6 @@ li {
 .farm-item {
   font-size: 18px;
   margin: 0 0 32px 23px;
-  align-items: center;
   box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
   background: var(--body-bg-color);
   display: grid;
@@ -835,9 +837,13 @@ li {
 .farm-subtitle,
 .farm-subtitle-two {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 120%;
   color: #676767;
+}
+
+.farm-subtitle-two {
+  font-size: 16px;
 }
 
 .farm-col {
@@ -880,6 +886,12 @@ li {
   }
   .farm-section .headline {
     margin-bottom: 70px;
+  }
+  .farm-section .btn-primary {
+    margin: 0 0 0 154px;
+  }
+  .farm-section .farm-subtitle {
+    font-size: 16px;
   }
   .farm-item {
     min-width: 745px;
@@ -961,23 +973,26 @@ li {
     height: 24px;
   }
   .farm-col .btn-primary {
-    margin: 0 0 0px 154px;
     padding: 10px 14px;
   }
 }
 /* AUTO */
 .auto-section {
-  padding: 33px 0;
+  padding: 36px 0;
   display: flex;
-}
-.auto-section .farm-list-img {
-  margin-top: 16px;
 }
 .auto-section .farm-item {
   gap: 2px;
+  margin-bottom: 33px;
 }
 .auto-section .farm-col-text {
-  margin: 13px 0 0 16px;
+  margin: 24px 0 0 16px;
+}
+.auto-section .farm-col-subtext {
+  margin-top: 90px;
+}
+.auto-section .farm-list-img {
+  margin-top: 13px;
 }
 
 .farm-sublist,
@@ -997,12 +1012,18 @@ li {
     padding-top: 86px;
     padding-bottom: 57px;
   }
-  .auto-section .farm-list-img {
-    width: 100%;
-    height: 100%;
+  .auto-section .headline {
+    margin-bottom: 69px;
   }
   .auto-section .farm-item {
     padding-left: 0;
+    margin-bottom: 25px;
+  }
+  .auto-section .farm-col-text {
+    margin: 0 45px 0 80px;
+  }
+  .auto-section .btn-primary {
+    margin: 0 0 0 163px;
   }
 }
 /* PARTNERS */
@@ -1025,7 +1046,7 @@ li {
 @media (min-width: 768px) {
   /* PARTNERS  */
   .partners-section {
-    padding-top: 57px;
+    padding-top: 64px;
     padding-bottom: 85px;
   }
   .partners-section .headline {
