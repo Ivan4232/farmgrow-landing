@@ -3,6 +3,16 @@
 .auto-section {
   padding: 33px 0;
   display: flex;
+
+  .farm-list-img {
+    margin-top: 16px;
+   }
+  .farm-item {
+    gap: 2px;
+  }
+    .farm-col-text {
+      margin: 13px 0 0 16px;
+    }
 }
 
 .farm-sublist,
@@ -20,7 +30,7 @@
   /* AUTO  */
   
     .auto-section {
-      padding-top: 90px;
+      padding-top: 86px;
       padding-bottom: 57px;
   
       .farm-list-img {
