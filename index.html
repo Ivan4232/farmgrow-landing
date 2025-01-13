@@ -15,11 +15,11 @@
       <!-- HEADER -->
       <header class="header">
         <div class="container">
-          <a class="logo">
-            <img src="images/logo.svg" alt="FarmGrow logo" />
-          </a>
-          <a class="logo-two">
-            <img src="images/logo-two.svg" alt="FarmGrow logo" />
+          <a href="#">
+            <picture>
+              <source class="logo-two" srcset="images/logo-two.svg" media="(min-width: 768px)">
+              <img class="logo" src="images/logo.svg" alt="FarmGrow logo" />
+            </picture>
           </a>
           <div class="nav">
             <div class="nav-list-container">
@@ -79,7 +79,7 @@
           </div>
         </section>
       </div>
-      <img class="fons-three" src="images/fons-three.jpg" alt="fons" />
+      <!-- <img class="fons-three" src="images/fons-three.jpg" alt="fons" /> -->
       <!-- TITLE -->
       <section class="title-section">
         <div class="container">
@@ -124,12 +124,14 @@
                 </li>
               </ul>
             </div>
-            <img
-              class="img-title-and"
-              src="images/statistics.svg"
-              alt="APY statistics"
-            />
-           <img class="img-title-and-two" src="images/statistics-two.png" alt="APY statistics">
+            <picture>
+              <source class="img-title-and-two" srcset="images/statistics-two.png" media="(min-width: 768px)" alt="APY statistics">
+              <img
+                class="img-title-and"
+                src="images/statistics.svg"
+                alt="APY statistics"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -141,8 +143,10 @@
           </h2>
           <ul class="features-list">
             <li class="features-sublist features-sublist-one">
-              <img class="features-img-one" src="images/exchange.png" alt="">
-              <img class="features-img" src="images/exchange-two.png" alt="Exchange" />
+              <picture>
+                <source class="features-img" srcset="images/exchange-two.png" alt="Exchange" media="(min-width: 768px)">
+                <img class="features-img-one" src="images/exchange.png" alt="Exchange" />
+              </picture>
               <h3 class="features-item">Exchange</h3>
               <p class="features-text">
                 Change your
@@ -151,8 +155,10 @@
               </p>
             </li>
             <li class="features-sublist">
-              <img class="features-img-one" src="images/shovel.png" alt="">
-              <img class="features-img" src="images/shovel-two.png" alt="Profit of coins" />
+              <picture>
+                <source class="features-img" srcset="images/shovel-two.png" alt="Profit of coins" media="(min-width: 768px)">
+                <img class="features-img-one" src="images/shovel.png" alt="Profit of coins">
+              </picture>
               <h4 class="features-item features-item-two">Farm</h4>
               <p class="features-text">
                 Farm your LP tokens and earn
@@ -161,8 +167,10 @@
               </p>
             </li>
             <li class="features-sublist">
-              <img class="features-img-one" src="images/stake.png" alt="">
-              <img class="features-img" src="images/stake-two.png" alt="Stake" />
+              <picture>
+                <source class="features-img" srcset="images/stake-two.png" alt="Stake" media="(min-width: 768px)">
+                <img class="features-img-one" src="images/stake.png" alt="Stake">
+              </picture>
               <h5 class="features-item features-item-three">Stake</h5>
               <p class="features-text">
                 Stake
@@ -171,8 +179,10 @@
               </p>
             </li>
             <li class="features-sublist">
-              <img class="features-img-one" src="images/referral.png" alt="">
-              <img class="features-img" src="images/referral-two.png" alt="Referral" />
+              <picture>
+                <source class="features-img" srcset="images/referral-two.png" alt="Referral" media="(min-width: 768px)">
+                <img class="features-img-one" src="images/referral.png" alt="Referral">
+              </picture>
               <h6 class="features-item features-item-four">Referral</h6>
               <p class="features-text features-text-referral">
                 Reffer your
@@ -181,8 +191,10 @@
               </p>
             </li>
             <li class="features-sublist">
-              <img class="features-img-one" src="images/pools.png" alt="">
-              <img class="features-img" src="images/pools-two.png" alt="Liquidity Pools" />
+              <picture>
+                <source class="features-img" srcset="images/pools-two.png" alt="Liquidity Pools" media="(min-width: 768px)">
+                <img class="features-img-one" src="images/pools.png" alt="Liquidity Pools">
+              </picture>
               <p class="features-item features-item-five">Liquidity Pools</p>
               <p class="features-text">
                 Change your
@@ -191,8 +203,10 @@
               </p>
             </li>
             <li class="features-sublist features-sublist-and">
-              <img class="features-img-one" src="images/lottery.png" alt="">
-              <img class="features-img" src="images/lottery-two.png" alt="Lottery" />
+              <picture>
+                <source class="features-img" srcset="images/lottery-two.png" alt="Lottery" media="(min-width: 768px)">
+                <img class="features-img-one" src="images/lottery.png" alt="Lottery">
+              </picture>
               <p class="features-item features-item-six">Lottery</p>
               <p class="features-text features-text-and">
                 Try your luck in
@@ -233,27 +247,23 @@
               <p class="info-text">LP Earned</p>
               <span class="highlight-color">$ 24.18M</span>
             </li>
-          </ul>
-          <div class="info-container">
-            <ul class="info-list">
-              <li class="info-sublist">
-                <img src="images/active-pools.png" alt="Active Pools" />
+            <li class="info-sublist info-disappear">
+              <img src="images/active-pools.png" alt="Active Pools" />
                 <p class="info-text">Active Pools</p>
                 <span class="highlight-color">$ 34.36B</span>
               </li>
-              <li class="info-sublist">
+              <li class="info-sublist info-disappear">
                 <img src="images/tvl.png" alt="TVL" />
                 <p class="info-text">TVL</p>
                 <span class="highlight-color">$33.70M</span>
               </li>
-              <li class="info-sublist">
+              <li class="info-sublist info-disappear">
                 <img src="images/supply.png" alt="Circulating supply" />
                 <p class="info-text">Circulating supply</p>
                 <span class="highlight-color">486.59K</span>
               </li>
             </ul>
-          </div>
-        </div>
+          </div> 
       </section>
       <!-- FARM -->
       <section class="farm-section">
@@ -263,76 +273,90 @@
             <ul class="farm-list">
               <li class="farm-item">
                 <div class="farm-col">
+                <picture>
+                  <source srcset="images/green-black2.png" media="(min-width: 768px)">
                   <img
                     class="farm-list-img"
                     src="images/green-black-one.png"
                     alt="FarmGrow product"
                   />
-                  <img class="farm-list-png" src="images/green-black2.png" alt="">
-                </div>
+                </picture>
+              </div>
+              <div class="farm-col-decor">
                 <div class="farm-col farm-col-text">
                   <h3 class="farm-title">Auto-compound</h3>
                   <p class="farm-subtitle">Stake BSW - Earn BSW</p>
-                  <p class="farm-title-two">Earn FARM - BNB</p>
-                  <p class="farm-subtitle-two">Stake FARM - Earn FARM</p>
                 </div>
-                <div class="farm-col farm-col-subtext">
-                  <p class="farm-text">APY</p>
-                  <p class="farm-text-two">APR</p>
-                  <span class="highlight-color">33.43 %</span>
-                  <span class="highlight-color highlight-color-two">78.2 %</span>
-                </div>
-                <div class="farm-col">
-                  <button class="btn btn-primary">Start Earning</button>
-                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
+              </div>
+              <div class="farm-col farm-col-subtext">
+                <p class="farm-text">APY</p>
+                <span class="highlight-color">33.43 %</span>
+              </div>
+              <div class="farm-col farm-col-last">
+                <button class="btn btn-primary">Start Earning</button>
+              </div>
               </li>
               <li class="farm-item">
                 <div class="farm-col">
+                <picture>
+                  <source srcset="images/green-yellow2.png" media="(min-width: 768px)">
                   <img
                     class="farm-list-img"
                     src="images/green-yellow-one.png"
                     alt="FarmGrow product"
                   />
-                  <img class="farm-list-png" src="images/green-yellow2.png" alt="">
-                </div>
+                </picture>
+              </div>
+              <div class="farm-col-decor">
                 <div class="farm-col farm-col-text">
                   <h3 class="farm-title">Auto-compound</h3>
                   <p class="farm-subtitle">Stake BSW - Earn BSW</p>
-                  <p class="farm-title-two">Earn FARM - BNB</p>
-                  <p class="farm-subtitle-two">Stake FARM - Earn FARM</p>
                 </div>
-                <div class="farm-col farm-col-subtext">
-                  <p class="farm-text">APY</p>
-                  <p class="farm-text-two">APR</p>
-                  <span class="highlight-color">33.43 %</span>
-                  <span class="highlight-color highlight-color-two">78.2 %</span>
-                </div>
-                <div class="farm-col">
-                  <button class="btn btn-primary">Start Earning</button>
-                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
+              </div>
+              <div class="farm-col farm-col-subtext">
+                <p class="farm-text">APY</p>
+                <span class="highlight-color">33.43 %</span>
+              </div>
+              <div class="farm-col farm-col-last">
+                <button class="btn btn-primary">Start Earning</button>
+              </div>
               </li>
               <li class="farm-item farm-item-end">
                 <div class="farm-col">
+                <picture>
+                  <source srcset="images/yellow-black.png" media="(min-width: 768px)">
                   <img
-                    class="farm-list-img farm-list-img-and"
+                    class="farm-list-img"
                     src="images/yellow-black-one.png"
                     alt="FarmGrow product"
                   />
-                  <img class="farm-list-png farm-list-png-and" src="images/yellow-black.png" alt="">
-                </div>
+                </picture>
+              </div>
+              <div class="farm-col-decor">
                 <div class="farm-col farm-col-text">
                   <h3 class="farm-title">Auto-compound</h3>
                   <p class="farm-subtitle">Stake BSW - Earn BSW</p>
                 </div>
-                <div class="farm-col farm-col-subtext ">
-                  <p class="farm-text">APY</p>
-                  <p class="farm-text-two">APR</p>
-                  <span class="highlight-color">33.43 %</span>
-                  <span class="highlight-color highlight-color-two">28.5 %</span>
-                </div>
-                <div class="farm-col">
-                  <button class="btn btn-primary">Start Earning</button>
-                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
+              </div>
+              <div class="farm-col farm-col-subtext">
+                <p class="farm-text">APY</p>
+                <span class="highlight-color">33.43 %</span>
+              </div>
+              <div class="farm-col farm-col-last">
+                <button class="btn btn-primary">Start Earning</button>
+              </div>
               </li>
             </ul>
           </div>
@@ -345,101 +369,117 @@
           <ul class="auto-list">
             <li class="farm-item">
               <div class="farm-col">
-                <img
-                  class="farm-list-img"
-                  src="images/green-green.svg"
-                  alt="FarmGrow product"
-                />
-              <img class="farm-list-png" src="images/green-green.png" alt="FarmGrow product">
+                <picture>
+                  <source srcset="images/green-green.png" media="(min-width: 768px)">
+                  <img
+                    class="farm-list-img"
+                    src="images/green-green.svg"
+                    alt="FarmGrow product"
+                  />
+                </picture>
               </div>
-              <div class="farm-col farm-col-text">
-                <h3 class="farm-title">Auto-compound</h3>
-                <p class="farm-subtitle">Stake BSW - Earn BSW</p>
-                <p class="farm-title-two">Earn FARM - BNB</p>
-                <p class="farm-subtitle-two">Stake FARM - Earn FARM</p>
+              <div class="farm-col-decor">
+                <div class="farm-col farm-col-text">
+                  <h3 class="farm-title">Auto-compound</h3>
+                  <p class="farm-subtitle">Stake BSW - Earn BSW</p>
+                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
               </div>
-              <div class="farm-col farm-col-one farm-col-subtext">
+              <div class="farm-col farm-col-subtext">
                 <p class="farm-text">APY</p>
-                <p class="farm-text-two">APR</p>
                 <span class="highlight-color">33.43 %</span>
-                <span class="highlight-color highlight-color-two">78.2 %</span>
               </div>
-              <div class="farm-col">
+              <div class="farm-col farm-col-last">
                 <button class="btn btn-primary">Start Earning</button>
               </div>
             </li>
             <li class="farm-item">
               <div class="farm-col">
-                <img
-                  class="farm-list-img"
-                  src="images/green-black.svg"
-                  alt="FarmGrow product"
-                />
-                <img class="farm-list-png" src="images/green-black.png" alt="FarmGrow product">
+                <picture>
+                  <source srcset="images/green-black.png" media="(min-width: 768px)">
+                  <img
+                    class="farm-list-img"
+                    src="images/green-black.svg"
+                    alt="FarmGrow product"
+                  />
+                </picture>
               </div>
-              <div class="farm-col farm-col-text">
-                <h3 class="farm-title">Auto-compound</h3>
-                <p class="farm-subtitle">Stake BSW - Earn BSW</p>
-                <p class="farm-title-two">Earn FARM - BNB</p>
-                <p class="farm-subtitle-two">Stake FARM - Earn FARM</p>
+              <div class="farm-col-decor">
+                <div class="farm-col farm-col-text">
+                  <h3 class="farm-title">Auto-compound</h3>
+                  <p class="farm-subtitle">Stake BSW - Earn BSW</p>
+                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
               </div>
               <div class="farm-col farm-col-subtext">
                 <p class="farm-text">APY</p>
-                <p class="farm-text-two">APR</p>
                 <span class="highlight-color">33.43 %</span>
-                <span class="highlight-color highlight-color-two">78.2 %</span>
               </div>
-              <div class="farm-col">
+              <div class="farm-col farm-col-last">
                 <button class="btn btn-primary">Start Earning</button>
               </div>
             </li>
             <li class="farm-item">
               <div class="farm-col">
-                <img
-                  class="farm-list-img"
-                  src="images/green-yellow.svg"
-                  alt="FarmGrow product"
-                />
-                <img class="farm-list-png" src="images/green-yellow.png" alt="FarmGrow product">
+                <picture>
+                  <source srcset="images/green-yellow.png" media="(min-width: 768px)">
+                  <img
+                    class="farm-list-img"
+                    src="images/green-yellow.svg"
+                    alt="FarmGrow product"
+                  />
+                </picture>
               </div>
-              <div class="farm-col farm-col-text">
-                <h3 class="farm-title">Auto-compound</h3>
-                <p class="farm-subtitle">Stake BSW - Earn BSW</p>
-                <p class="farm-title-two">Earn FARM - BNB</p>
-                <p class="farm-subtitle-two">Stake FARM - Earn FARM</p>
+              <div class="farm-col-decor">
+                <div class="farm-col farm-col-text">
+                  <h3 class="farm-title">Auto-compound</h3>
+                  <p class="farm-subtitle">Stake BSW - Earn BSW</p>
+                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
               </div>
               <div class="farm-col farm-col-subtext">
                 <p class="farm-text">APY</p>
-                <p class="farm-text-two">APR</p>
                 <span class="highlight-color">33.43 %</span>
-                <span class="highlight-color highlight-color-two">78.2 %</span>
               </div>
-              <div class="farm-col">
+              <div class="farm-col farm-col-last">
                 <button class="btn btn-primary">Start Earning</button>
               </div>
             </li>
             <li class="farm-item">
               <div class="farm-col">
-                <img
-                  class="farm-list-img"
-                  src="images/black-green.svg"
-                  alt="FarmGrow product"
-                />
-                <img class="farm-list-png" src="images/black-green.png" alt="FarmGrow product">
+                <picture>
+                  <source srcset="images/black-green.png" media="(min-width: 768px)">
+                  <img
+                    class="farm-list-img"
+                    src="images/black-green.svg"
+                    alt="FarmGrow product"
+                  />
+                </picture>
               </div>
-              <div class="farm-col farm-col-text">
-                <h3 class="farm-title">Auto-compound</h3>
-                <p class="farm-subtitle">Stake BSW - Earn BSW</p>
-                <p class="farm-title-two">Earn FARM - BNB</p>
-                <p class="farm-subtitle-two">Stake FARM - Earn FARM</p>
+              <div class="farm-col-decor">
+                <div class="farm-col farm-col-text">
+                  <h3 class="farm-title">Auto-compound</h3>
+                  <p class="farm-subtitle">Stake BSW - Earn BSW</p>
+                </div>
+                  <picture>
+                    <source srcset="images/vector.png" media="(min-width: 768px)">
+                    <img class="img-farm" src="#" alt="#">
+                  </picture>
               </div>
               <div class="farm-col farm-col-subtext">
                 <p class="farm-text">APY</p>
-                <p class="farm-text-two">APR</p>
                 <span class="highlight-color">33.43 %</span>
-                <span class="highlight-color highlight-color-two">78.2 %</span>
               </div>
-              <div class="farm-col">
+              <div class="farm-col farm-col-last">
                 <button class="btn btn-primary">Start Earning</button>
               </div>
             </li>

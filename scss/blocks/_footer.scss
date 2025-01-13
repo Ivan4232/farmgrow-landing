@@ -19,8 +19,8 @@
       color: var(--body-bg-color);
       background: #262626;
       min-width: 360px;
-      max-height: 323px;
-      padding: 42px;
+      min-height: 323px;
+      padding: 42px 0;
 }
     
     .footer-headline {
@@ -32,9 +32,10 @@
 
 .footer-links-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 140px);
     gap: 16px;
     margin-bottom: 50px;
+    justify-content: center;
 }
     
 .footer-link {
@@ -44,7 +45,7 @@
   color: #f8f8f8;
   border: 1px solid #484848;
    border-radius: 38px;
-  min-width: 143px;
+  width: 143px;
    min-height: 44px;
   box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
   background: #373737;
@@ -68,7 +69,7 @@ img{
   
     .footer-links-box {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 140px);
     }
   
     .footer-text {

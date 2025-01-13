@@ -14,6 +14,7 @@ body {
   background-color: var(--body-bg-color);
   font-size: var(--text-font-size);
   line-height: 1.2;
+  min-width: 360px;
 }
 
 a {
@@ -26,8 +27,7 @@ li {
 }
 
 .container {
-  max-width: 1440px;
-  width: 100%;
+  max-width: 1162px;
   padding: 0 16px;
   margin: 0 auto;
 }

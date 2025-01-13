@@ -3,30 +3,38 @@
 .farm-section{
   padding: 34px 0 33px;
   display: flex;
-
-  .farm-item{
-    align-items: center;
-  }
 }
 
-.farm-list {
+.farm-section,
+.auto-section{
+  .highlight-color {
+      width: 300px;
+      height: 48px;
+      display: block;
+ }
+}
+
+.farm-list,
+.auto-list {
   font-size: var(--text-font-size);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  max-width: 744px;
 }
 
 .farm-item {
   font-size: 18px;
-  margin: 0 0 32px 23px;
   box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
     background: var(--body-bg-color);
   display: grid;
     grid-template-columns: 1fr 3fr;
   border-radius: 16px;
-    width: 282px;
-    height: 153px;
+    aspect-ratio: 28/15;
   font-weight: 600;
   border-radius: var(--border-radius-info);
-  gap: 12px;
+  gap: 20px;
 }
 
 .farm-title {
@@ -46,50 +54,43 @@ margin-bottom: 4px;
   margin-bottom: 8px;
 }
 
-.farm-subtitle,
-.farm-subtitle-two{
+.farm-subtitle{
   font-weight: 600;
     font-size: 14px;
     line-height: 120%;
     color: #676767;
 }
 
-.farm-subtitle-two{
-  font-size: 16px;
-}
-
-.farm-col {
-  width: 40px;
-  .btn{
-    margin: 0 0 19px 120px;
-  }
-}
-
 .farm-list-img{
   margin: 10px 0 0 11px;
-}
-
-.farm-list-png,
-.farm-title-two,
-.farm-subtitle-two,
-.farm-text-two,
-.highlight-color-two{
-  display: none;
 }
 
 .farm-list-img-and{
   margin-left: 23px;
 }
 
-.farm-col-text{
-  width: 167px;
-  margin: 22px 0 0 9px;
-}
+@media (max-width: 768px) {
+    // .farm-col {
+    //   width: 40px;
+    // }
+    .farm-col-text{
+      width: 167px;
+    }
+    
+    .farm-col-subtext{
+      position: absolute;
+      margin: 100px 0 0 25px;
+    }
 
-.farm-col-subtext{
-  position: absolute;
-  margin: 100px 0 0 25px;
-}
+    .farm-section,
+    .auto-section{
+      .img-farm{
+        display: none;
+      }
+    }
+  }
+
+
 
 @media (min-width: 768px) {
   /* FARM  */
@@ -100,22 +101,17 @@ margin-bottom: 4px;
       .headline {
         margin-bottom: 70px;
       }
-
-      .btn-primary {
-        margin: 0 0 0 154px;
-      }
-
       .farm-subtitle{
         font-size: 16px;
       }
     }
   
     .farm-item {
-      min-width: 745px;
+      max-width: 745px;
       max-height: 100px;
-      display: flex;
       padding: 20px 24px 18px 0px;
-      margin-bottom: 40px;
+      aspect-ratio: 74 / 10;
+      grid-template-columns: 100px 210px 100px 1fr;
     }
 
     .farm-item-end{
@@ -126,22 +122,10 @@ margin-bottom: 4px;
 
     .farm-list,
     .auto-list{
-      margin-left: 170px;
+      margin: 0 auto;
   }
-
-    .farm-list-img,
-    .farm-title,
-    .farm-subtitle,
-    .farm-text,
-    .highlight-color{
-      display: none;
-    }
   
     .farm-list-png,
-    .farm-title-two,
-    .farm-subtitle-two,
-    .farm-text-two,
-    .highlight-color-two,
     .farm-col-text{
       display: flex;
     }
@@ -151,10 +135,6 @@ margin-bottom: 4px;
       display: flex;
     }
    }
-
-    .farm-subtitle-two{
-      margin-bottom: 2px;
-    }
 
     .farm-list-png-and{
      margin: 0 0 5px 13px;
@@ -172,37 +152,18 @@ margin-bottom: 4px;
       font-size: 20px;
     }
   
-    .farm-title-two{
-      font-size: 20px;
-    }
-
     .farm-col-text {
       display: block;
-      margin: 0 34px 0 71px;
       width: 206px;
       height: 60px;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      padding-left: 20px;
     }
   
     .farm-text {
-      margin: 27px 0 14px;
-    }
-  
-    .farm-text-two{
-      font-weight: 600;
-        font-size: 16px;
-        color: #676767;
-    }
-
-    .farm-col-subtext {
-     position: relative;
-     margin: 0;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-    height: 57px;
+      margin: 0 0 14px;
     }
 
     .highlight-color-two{
@@ -215,5 +176,14 @@ margin-bottom: 4px;
       .btn-primary{
         padding: 10px 14px;
       }
+    }
+  
+    .farm-col-last{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .farm-col-decor{
+      display: flex;
     }
   }
