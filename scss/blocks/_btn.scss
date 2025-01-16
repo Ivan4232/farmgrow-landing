@@ -104,6 +104,14 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .cards-section{
+    .btn{
+      font-weight: 600;
+        font-size: var(--list-font-size);
+    }
+  }
+
   .btn-header-activ-two{
     display: flex;
   }
