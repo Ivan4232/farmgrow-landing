@@ -1,7 +1,7 @@
     /* AUTO */
 
 .auto-section {
-  padding: 36px 0;
+  padding: 40px 0;
   display: flex;
 
   .farm-item {
@@ -26,12 +26,11 @@
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   /* AUTO  */
   
     .auto-section {
-      padding-top: 86px;
-      padding-bottom: 57px;
+      padding: 90px 0 60px;
   
     .headline {
         margin-bottom: 69px;

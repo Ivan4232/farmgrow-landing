@@ -1,7 +1,7 @@
 /* BTN */
 
 .btn {
-  padding: 10px 16px;
+  padding: 10px var(--offset);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,8 @@
   border: none;
   color: var(--body-bg-color);
   background: linear-gradient(130deg, #30c917 0%, #279a13 100%);
+  min-height: 40px;
+  max-width: 140px;
 }
 
 .btn-primary,
@@ -63,15 +65,28 @@
   height: 40px;
   display: block;
   margin-left: 98px;
-  padding: 12px 16px 10px;
+  padding: 12px var(--offset) 10px;
 }
 
 .btn-with-icon{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  margin-left: 50px;
   border-radius: var(--border-radius);
-    max-width: 152px;
-    max-height: 40px;
+    min-height: 40px;
+    min-width: 152px;
+    margin: 0 22px 0 auto;
+    gap: 3px;
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: url(../images/arrow.svg) no-repeat;
+      background-size: contain;
+      flex-shrink: 0;
+    }
 }
 
 .btn-header-activ-two {
@@ -88,7 +103,7 @@
   min-height: 137px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .btn-header-activ-two{
     display: flex;
   }
@@ -107,5 +122,11 @@
     font-size: 18px;
     margin: 0 auto;
     padding: 0;
+ }
+
+ .btn-with-icon {
+  margin-left: 48px;
+   min-width: 147px;
+   max-height: 43px;
  }
 }

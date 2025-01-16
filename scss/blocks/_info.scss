@@ -1,7 +1,7 @@
     /* INFO */
 
 .info-section{
-  padding: 37px 0 34px;
+  padding: 40px 0 30px;
 
   .headline{
     margin-bottom: 47px;
@@ -52,11 +52,11 @@ display: flex;
 }
   
   
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     /* INFO  */
   
     .info-section {
-      padding: 72px 0;
+      padding: 70px 0;
 
       .headline {
           margin-bottom: 51px;

@@ -17,6 +17,21 @@ body {
   min-width: 360px;
 }
 
+html,
+body{
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,8 +42,8 @@ li {
 }
 
 .container {
-  max-width: 1162px;
-  padding: 0 16px;
+  max-width: var(--container-width);
+  padding: 0 var(--offset);
   margin: 0 auto;
 }
 

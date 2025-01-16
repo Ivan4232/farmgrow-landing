@@ -1,5 +1,5 @@
 .features-section{
-  padding: 55px 0 38px 0;
+  padding: 55px 0 40px 0;
 
   .headline{
     margin-bottom: 40px;
@@ -61,12 +61,11 @@
     margin-bottom: 38px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   /* FEATURES  */
   
     .features-section {
-      padding-top: 100px;
-      padding-bottom: 72px;
+      padding: 100px 0 70px;
 
       .headline{
         margin-bottom: 100px;

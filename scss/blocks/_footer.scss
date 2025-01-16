@@ -18,9 +18,9 @@
       font-size: 12px;
       color: var(--body-bg-color);
       background: #262626;
-      min-width: 360px;
       min-height: 323px;
-      padding: 42px 0;
+      width: 100%;
+      padding: 40px 0;
 }
     
     .footer-headline {
@@ -33,7 +33,7 @@
 .footer-links-box {
     display: grid;
     grid-template-columns: repeat(2, 140px);
-    gap: 16px;
+    gap: var(--offset);
     margin-bottom: 50px;
     justify-content: center;
 }
@@ -59,12 +59,12 @@ img{
     text-align: center;
   }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   /* FOOTER */
   
     .footer {
       margin: 0 auto;
-      padding: 46px 0;
+      padding: 50px 0;
     }
   
     .footer-links-box {
