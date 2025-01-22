@@ -8,6 +8,7 @@
 display: grid;
 gap: 20px;
 grid-template-columns: repeat(3, 1fr);
+padding: 40px 0;
 }
 
 .partners-box-two{
@@ -21,28 +22,19 @@ display: grid;
   
     .partners-section {
       padding: 60px 0 80px;
-  
-      .headline {
-        padding-bottom: 51px;
-      }
     }
   
     .partners-box {
-      margin-bottom: 106px;
+      gap: 60px;
+    padding: 80px 0;
     }
   
-    .partners-box-two {
-      grid-template-columns: repeat(4, 1fr);
+    .img-partners,
+    .img-partners-two{
+    width: 100%;
+    object-fit: contain;
     }
-  
-    .img-partners {
-      padding-top: 29px;
-      max-width: 356px;
-      min-height: 92px;
-    }
-  
-    .img-partners-two {
-      min-width: 251px;
-      min-height: 74px;
-    }
+   .partners-box-two {
+     grid-template-columns: repeat(4, 1fr);
+   }
   }

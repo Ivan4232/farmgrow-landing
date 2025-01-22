@@ -8,11 +8,6 @@ const navElement = document.querySelector('.nav');
 const navBtnElement = navElement.querySelector('.mobile-menu-btn')
 const showMenuActiveClassName = 'nav-visible';
 
-console.log(`
-  navElement: ${navElement},
-  navBtnElement: ${navBtnElement}`);
-
-
 function toggleMenuState() {
   
   // Opened state
