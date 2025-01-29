@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FarmGrow</title>
+    <!--Favicon-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <!--end-Favicon-->
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -17,14 +33,7 @@
         <header class="header">
           <div class="container">
             <a href="#">
-              <picture>
-                <source
-                  class="logo-two"
-                  srcset="images/logo-two.svg"
-                  media="(min-width: 768px)"
-                />
-                <img class="logo" src="images/logo.svg" alt="FarmGrow logo" />
-              </picture>
+              <img class="logo" src="images/logo-two.svg" />
             </a>
             <div class="nav">
               <div class="nav-list-container">
@@ -40,12 +49,12 @@
                   </li>
                 </ul>
                 <button class="btn btn-header-activ">Start Earning</button>
-                <button class="btn btn-header-activ-two">Button</button>
+                <button class="btn btn-header-activ-2">Button</button>
               </div>
               <button class="mobile-menu-btn">
-                <span class="span-one"></span>
-                <span class="span-two"></span>
-                <span class="span-three"></span>
+                <span class="span-1"></span>
+                <span class="span-2"></span>
+                <span class="span-3"></span>
               </button>
             </div>
           </div>
@@ -87,61 +96,54 @@
           </section>
         </div>
         <!-- TITLE -->
-        <section class="title-section">
+        <section class="statistic-section">
           <div class="container">
-            <div class="title-box-img">
-              <div class="title-box">
-                <div class="bg-title">
-                  <div class="bg-primary">
-                    <h2 class="headline">Earn Extra Yield</h2>
-                    <p class="paragraph-title">Let Harvest do the hard work</p>
-                  </div>
-                  <ul class="title-list-one">
-                    <li class="title-item">
-                      <img
-                        class="img-title"
-                        src="images/compong.svg"
-                        alt="Auto-compounding"
-                      />
-                      <p class="title-text title-text-one">Auto-compounding</p>
-                    </li>
-                    <li class="title-item">
-                      <img
-                        class="img-title"
-                        src="images/auto.svg"
-                        alt="Auto rewards"
-                      />
-                      <p class="title-text">Auto rewards</p>
-                    </li>
-                  </ul>
+            <div class="statistic-box-1">
+              <div class="statistic-box-2">
+                <div class="statistic-title">
+                  <h2 class="headline">Earn Extra Yield</h2>
+                  <p class="paragraph-title">Let Harvest do the hard work</p>
                 </div>
-                <ul class="title-list">
-                  <li class="title-item title-item-three">
+                <ul class="statistic-list">
+                  <li class="statistic-item">
                     <img
-                      class="img-title img-title-truck"
+                      class="img-statistic"
+                      src="images/compong.svg"
+                      alt="Auto-compounding"
+                    />
+                    <p class="statistic-text">Auto-compounding</p>
+                  </li>
+                  <li class="statistic-item">
+                    <img
+                      class="img-statistic"
+                      src="images/auto.svg"
+                      alt="Auto rewards"
+                    />
+                    <p class="statistic-text">Auto rewards</p>
+                  </li>
+                  <li class="statistic-item">
+                    <img
+                      class="img-statistic"
                       src="images/truck.svg"
                       alt="Farm rewards"
                     />
-                    <p class="title-text">Farm rewards</p>
+                    <p class="statistic-text">Farm rewards</p>
                   </li>
-                  <li class="title-item title-item-and">
-                    <img class="img-title" src="images/dao.svg" alt="rewards" />
-                    <p class="title-text">Unique DAO token rewards</p>
+                  <li class="statistic-item">
+                    <img
+                      class="img-statistic"
+                      src="images/dao.svg"
+                      alt="rewards"
+                    />
+                    <p class="statistic-text">Unique DAO token rewards</p>
                   </li>
                 </ul>
               </div>
-              <picture>
-                <source
-                  class="img-title-and-two"
-                  srcset="images/statistics-two.png"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  class="img-title-and"
-                  src="images/statistics.svg"
-                  alt="APY statistics"
-                />
-              </picture>
+              <img
+                class="img-statistic-and"
+                src="images/statistics-two.png"
+                alt="APY statistics"
+              />
             </div>
           </div>
         </section>
@@ -152,123 +154,81 @@
               <span class="features-title">FarmGrow</span> Ecosystem
             </h2>
             <ul class="features-list">
-              <li class="features-sublist features-sublist-one">
-                <picture>
-                  <source
-                    class="features-img"
-                    srcset="images/exchange-two.png"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    class="features-img-one"
-                    src="images/exchange.png"
-                    alt="Exchange"
-                  />
-                </picture>
+              <li class="features-sublist">
+                <img
+                  class="features-img"
+                  srcset="images/exchange-two.png"
+                  alt="exchange"
+                />
                 <h3 class="features-item">Exchange</h3>
                 <p class="features-text">
                   Change your
-                  <span class="features-color">$FARM</span>
+                  <span class="primary-color">$FARM</span>
                   tokens for many other Tokens
                 </p>
               </li>
               <li class="features-sublist">
-                <picture>
-                  <source
-                    class="features-img"
-                    srcset="images/shovel-two.png"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    class="features-img-one"
-                    src="images/shovel.png"
-                    alt="Profit of coins"
-                  />
-                </picture>
-                <h4 class="features-item features-item-two">Farm</h4>
+                <img
+                  class="features-img"
+                  src="images/shovel-two.png"
+                  alt="shovel"
+                />
+                <h4 class="features-item">Farm</h4>
                 <p class="features-text">
                   Farm your LP tokens and earn
-                  <span class="features-color">$FARM</span>
+                  <span class="primary-color">$FARM</span>
                   tokens in return
                 </p>
               </li>
               <li class="features-sublist">
-                <picture>
-                  <source
-                    class="features-img"
-                    srcset="images/stake-two.png"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    class="features-img-one"
-                    src="images/stake.png"
-                    alt="Stake"
-                  />
-                </picture>
-                <h5 class="features-item features-item-three">Stake</h5>
+                <img
+                  class="features-img"
+                  src="images/stake-two.png"
+                  alt="stake"
+                />
+                <h5 class="features-item">Stake</h5>
                 <p class="features-text">
                   Stake
-                  <span class="features-color">$FARM</span>
+                  <span class="primary-color">$FARM</span>
                   Tokens up to 100% APY
                 </p>
               </li>
               <li class="features-sublist">
-                <picture>
-                  <source
-                    class="features-img"
-                    srcset="images/referral-two.png"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    class="features-img-one"
-                    src="images/referral.png"
-                    alt="Referral"
-                  />
-                </picture>
-                <h6 class="features-item features-item-four">Referral</h6>
+                <img
+                  class="features-img"
+                  src="images/referral-two.png"
+                  alt="referral"
+                />
+                <h6 class="features-item">Referral</h6>
                 <p class="features-text features-text-referral">
                   Reffer your
-                  <span class="features-color">friend</span>
+                  <span class="primary-color">friend</span>
                   and earn more
                 </p>
               </li>
               <li class="features-sublist">
-                <picture>
-                  <source
-                    class="features-img"
-                    srcset="images/pools-two.png"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    class="features-img-one"
-                    src="images/pools.png"
-                    alt="Liquidity Pools"
-                  />
-                </picture>
-                <p class="features-item features-item-five">Liquidity Pools</p>
+                <img
+                  class="features-img"
+                  src="images/pools-two.png"
+                  alt="pools"
+                />
+                <p class="features-item">Liquidity Pools</p>
                 <p class="features-text">
                   Change your
-                  <span class="features-color">$FARM</span>
+                  <span class="primary-color">$FARM</span>
                   tokens for many other Tokens
                 </p>
               </li>
-              <li class="features-sublist features-sublist-and">
-                <picture>
-                  <source
-                    class="features-img"
-                    srcset="images/lottery-two.png"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    class="features-img-one"
-                    src="images/lottery.png"
-                    alt="Lottery"
-                  />
-                </picture>
-                <p class="features-item features-item-six">Lottery</p>
+              <li class="features-sublist">
+                <img
+                  class="features-img"
+                  src="images/lottery-two.png"
+                  atl="lottery"
+                />
+                <p class="features-item">Lottery</p>
                 <p class="features-text features-text-and">
                   Try your luck in
-                  <span class="features-color">lottery</span>
+                  <span class="primary-color">lottery</span>
                 </p>
               </li>
             </ul>
@@ -305,17 +265,17 @@
                 <p class="info-text">LP Earned</p>
                 <span class="highlight-color">$ 24.18M</span>
               </li>
-              <li class="info-sublist info-disappear">
+              <li class="info-sublist mobail-hiden">
                 <img src="images/active-pools.png" alt="Active Pools" />
                 <p class="info-text">Active Pools</p>
                 <span class="highlight-color">$ 34.36B</span>
               </li>
-              <li class="info-sublist info-disappear">
+              <li class="info-sublist mobail-hiden">
                 <img src="images/tvl.png" alt="TVL" />
                 <p class="info-text">TVL</p>
                 <span class="highlight-color">$33.70M</span>
               </li>
-              <li class="info-sublist info-disappear">
+              <li class="info-sublist mobail-hiden">
                 <img src="images/supply.png" alt="Circulating supply" />
                 <p class="info-text">Circulating supply</p>
                 <span class="highlight-color">486.59K</span>
@@ -331,14 +291,14 @@
               <ul class="farm-list">
                 <li class="farm-item">
                   <div class="farm-card">
-                    <div class="card-col card-col-top">
+                    <div class="card-col card-col-1">
                       <img src="images/green-black-one.png" alt="" />
                       <div class="card-text">
                         <h3 class="farm-card-title">Auto-compound</h3>
                         <p class="card-subtext">Stake BSW - Earn BSW</p>
                       </div>
                     </div>
-                    <div class="card-col card-col-buttom">
+                    <div class="card-col card-col-2">
                       <div class="card-apy">
                         <span class="card-apy-1">APY</span>
                         <span class="card-apy-2">33.43 %</span>
@@ -349,14 +309,14 @@
                 </li>
                 <li class="farm-item">
                   <div class="farm-card">
-                    <div class="card-col card-col-top">
+                    <div class="card-col card-col-1">
                       <img src="images/green-yellow-one.png" alt="" />
                       <div class="card-text">
                         <h3 class="farm-card-title">Auto-compound</h3>
                         <p class="card-subtext">Stake BSW - Earn BSW</p>
                       </div>
                     </div>
-                    <div class="card-col card-col-buttom">
+                    <div class="card-col card-col-2">
                       <div class="card-apy">
                         <span class="card-apy-1">APY</span>
                         <span class="card-apy-2">33.43 %</span>
@@ -367,14 +327,14 @@
                 </li>
                 <li class="farm-item">
                   <div class="farm-card">
-                    <div class="card-col card-col-top">
+                    <div class="card-col card-col-1">
                       <img src="images/yellow-black.svg" alt="" />
                       <div class="card-text">
                         <h3 class="farm-card-title">Auto-compound</h3>
                         <p class="card-subtext">Stake BSW - Earn BSW</p>
                       </div>
                     </div>
-                    <div class="card-col card-col-buttom">
+                    <div class="card-col card-col-2">
                       <div class="card-apy">
                         <span class="card-apy-1">APY</span>
                         <span class="card-apy-2">33.43 %</span>
@@ -391,17 +351,17 @@
         <section class="auto-section">
           <div class="container">
             <h2 class="headline">Upcoming Pools</h2>
-            <ul class="auto-list">
+            <ul class="farm-list">
               <li class="farm-item">
                 <div class="farm-card">
-                  <div class="card-col card-col-top">
+                  <div class="card-col card-col-1">
                     <img src="images/green-green.svg" alt="" />
                     <div class="card-text">
                       <h3 class="farm-card-title">Auto-compound</h3>
                       <p class="card-subtext">Stake BSW - Earn BSW</p>
                     </div>
                   </div>
-                  <div class="card-col card-col-buttom">
+                  <div class="card-col card-col-2">
                     <div class="card-apy">
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
@@ -412,14 +372,14 @@
               </li>
               <li class="farm-item">
                 <div class="farm-card">
-                  <div class="card-col card-col-top">
+                  <div class="card-col card-col-1">
                     <img src="images/green-black.svg" alt="" />
                     <div class="card-text">
                       <h3 class="farm-card-title">Auto-compound</h3>
                       <p class="card-subtext">Stake BSW - Earn BSW</p>
                     </div>
                   </div>
-                  <div class="card-col card-col-buttom">
+                  <div class="card-col card-col-2">
                     <div class="card-apy">
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
@@ -430,14 +390,14 @@
               </li>
               <li class="farm-item">
                 <div class="farm-card">
-                  <div class="card-col card-col-top">
+                  <div class="card-col card-col-1">
                     <img src="images/green-yellow.svg" alt="" />
                     <div class="card-text">
                       <h3 class="farm-card-title">Auto-compound</h3>
                       <p class="card-subtext">Stake BSW - Earn BSW</p>
                     </div>
                   </div>
-                  <div class="card-col card-col-buttom">
+                  <div class="card-col card-col-2">
                     <div class="card-apy">
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
@@ -448,14 +408,14 @@
               </li>
               <li class="farm-item">
                 <div class="farm-card">
-                  <div class="card-col card-col-top">
+                  <div class="card-col card-col-1">
                     <img src="images/black-green.svg" alt="" />
                     <div class="card-text">
                       <h3 class="farm-card-title">Auto-compound</h3>
                       <p class="card-subtext">Stake BSW - Earn BSW</p>
                     </div>
                   </div>
-                  <div class="card-col card-col-buttom">
+                  <div class="card-col card-col-2">
                     <div class="card-apy">
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>

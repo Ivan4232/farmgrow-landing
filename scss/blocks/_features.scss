@@ -7,8 +7,15 @@
 }
 
 .features-title,
-.features-color {
+.primary-color {
   color: #2aa915;
+}
+
+.features-list{
+  display: grid;
+  gap: var(--offset-lg);
+  grid-template-columns: repeat(auto-fill, 360px);
+  margin-bottom: 40px;
 }
 
 .features-sublist {
@@ -21,11 +28,7 @@
     justify-content: space-between;
       align-items: center;
       text-align: center;
-      margin-bottom: 32px;
-    }
-
-    .features-sublist-one{
-      margin-bottom: 40px;
+      padding: 20px 35px;
     }
 
     .features-img-one{
@@ -36,8 +39,6 @@
     font-weight: 500;
       font-size: 18px;
       color: #2f2f2f;
-      position: absolute;
-      margin-top: 118px;
    }
 
    .features-text{
@@ -45,8 +46,6 @@
       font-size: 13px;
       text-align: center;
       color: #4b4b4b;
-      max-width: 202px;
-      margin-bottom: 23px;
    }
 
      .features-text-referral{
@@ -58,7 +57,7 @@
     }
 
   .features-text-and{
-    margin-bottom: 38px;
+    margin-bottom: 21px;
   }
 
 @media (min-width: $tablet-width) {
@@ -73,8 +72,6 @@
     }
 
     .features-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr );
       gap: 44px 24px;
       margin-bottom: 80px;
       justify-content: center;
@@ -86,23 +83,6 @@
       margin: 0;
     }
   
-    .features-item-two,
-    .features-item-six{
-     margin-left: 5px;
-    }
-     
-     .features-item-three {
-      margin-left: 2px;
-     }
-
-    .features-item-four {
-      margin-left: 4px;
-    }
-
-    .features-item-five {
-      margin-left: 13px;
-    }
-
     .features-sublist {
       border-radius: var(--border-radius);
       justify-content: flex-end;
@@ -115,20 +95,10 @@
     .btn-features {
       margin-top: 80px;
     }
-    
-    .features-img {
-      margin-bottom: 32px;
-    }
-
-    .features-img-one {
-      margin-top: -10px;
-    }
 
      .features-text{
       font-weight: 400;
         font-size: 18px;
-        max-width: 282px;
-        margin: 0;
      }
 
     .features-text-referral{
@@ -138,7 +108,6 @@
 
 @media (min-width: 1002px) {
   .features-list {
-    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
 }

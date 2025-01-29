@@ -39,18 +39,18 @@ justify-content: center;
           margin-top: 24px;
           margin-left: 0;
 
-          .span-one{
+          .span-1{
             display: none;
           }
-          .span-two,
-          .span-three{
+          .span-2,
+          .span-3{
             position: absolute;
               width: 18px;
               height: 3px;
               background: #bfbcb8;
               transform: rotate(45deg);
           }
-          .span-three{
+          .span-3{
             transform: rotate(-45deg);
           }
         }
@@ -141,7 +141,7 @@ margin-left: 158px;
     font-size: 18px;
   }
 
-  .btn-header-activ-two {
+  .btn-header-activ-2 {
     display: flex;
   }
 
@@ -169,10 +169,8 @@ margin-left: 158px;
     display: none;
   }
 
-  .logo-two {
-    width: 152px;
+  .logo{
     margin-right: 150px;
     margin-top: 7px;
-    display: flex;
   }
 }
