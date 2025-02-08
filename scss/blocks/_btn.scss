@@ -127,17 +127,22 @@
  }
 
  .btn-features{
-  width: 177px;
+  min-width: 177px;
     height: 56px;
     font-weight: 600;
     font-size: 18px;
     margin: 0 auto;
     padding: 0;
+    letter-spacing: 1px;
  }
 
  .btn-with-icon {
   margin-left: 48px;
    min-width: 147px;
    max-height: 43px;
+ }
+ .btn-primary{
+  padding: 12px 8px 10px;
+  letter-spacing: .8px;
  }
 }
