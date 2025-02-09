@@ -1,12 +1,27 @@
     /* AUTO */
 
 .auto-section {
-  padding: 40px 0;
+  padding: 123px 0 78px;
   display: flex;
 }
 
 @media (min-width: $tablet-width) {
   /* AUTO  */
-  
-
+   .auto-section{
+    .headline {
+        margin-bottom: 70px;
+}
+ .farm-list {
+   gap: 25px;
+ }
+ .farm-card {
+  padding: 20px 0px 20px 0px;
+}
+.card-col {
+  gap: 25px;
+}
+.card-text {
+padding: 10px 29px 10px 0;
+}
+}
   }

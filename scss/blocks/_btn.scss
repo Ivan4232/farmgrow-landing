@@ -139,7 +139,10 @@
  .btn-with-icon {
   margin-left: 48px;
    min-width: 147px;
-   max-height: 43px;
+   min-height: 46px;
+  padding: 10px 9px 10px 16px;
+  gap: 0;
+  justify-content: start;
  }
  .btn-primary{
   padding: 12px 8px 10px;

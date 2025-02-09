@@ -70,7 +70,7 @@
   /* CARDS  */
   
     .cards-section {
-      padding: 85px 0;
+      padding: 89px 0 105px;
     }
   
     .card-columns {
@@ -80,41 +80,59 @@
     }
   
     .cards-box {
-      min-height: 400px;
-      padding: 170px 64px 32px 32px;
+      min-height: 404px;
+      padding: 179px 59px 32px 35px;
       font-size: 20px;
+      border-radius: 24px;
       line-height: 130%;
-      max-width: 550px;
+      max-width: 552px;
 
-      p {
-        margin-bottom: 32px;
+      .card-text {
+        margin-bottom: 22px;
       }
   
       .btn {
         min-width: 177px;
         min-height: 56px;
+        margin-left: -3px;
+        border-radius: 8px;
+        letter-spacing: .8px;
+        padding: 12px 16px 10px;
       }
     }
   
     .cards-box-1 {
       &::before {
         background-image: url(../images/tractor-two.svg);
-        min-height: 225px;
+        min-height: 223px;
         min-width: 272px;
-  
+        top: 0;
+        right: -13px;
       }
+      margin-left: 1px;
     }
   
     .cards-box-2 {
       &::before {
         background-image: url(../images/shovel-two.svg);
         min-height: 240px;
-        min-width: 285px;
-        right: -60px;
+        min-width: 229px;
+        right: 3px;
+        margin-top: 8px;
       }
+      padding-top: 176px;
+
+   .card-title {
+     margin-bottom: 23px;
+   }
+  .card-text {
+    margin-bottom: 23px;
+ }
     }
   
     .card-title {
-      margin-bottom: var(--offset);
+      font-weight: 600;
+      font-size: 40px;
+      margin: 0 0 21px -3px;
     }
   }
