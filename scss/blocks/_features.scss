@@ -1,5 +1,5 @@
 .features-section{
-  padding: 69px 0 40px 0;
+  padding: 73px 0 40px 0;
 
   .headline{
     margin-bottom: 38px;
@@ -15,7 +15,7 @@
   display: grid;
   gap: var(--offset-lg);
   grid-template-columns: repeat(auto-fill, 360px);
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   justify-content: center;
 }
 
@@ -29,7 +29,9 @@
     justify-content: space-between;
       align-items: center;
       text-align: center;
-      padding: 20px 37px 20px;
+      max-width: 280px;
+      min-height: 204px;
+      padding: 20px 37px 19px;
       margin: 0 auto;
 
     }
@@ -39,14 +41,15 @@
     }
 
     .features-img {
-      max-width: 41%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 14px;
     }
 
    .features-item{
     font-weight: 500;
       font-size: 18px;
       color: #2f2f2f;
-      margin-bottom: 7px;
    }
   
    .features-text{
@@ -58,23 +61,18 @@
       line-height: 18px;
    }
 
-     .features-text-referral{
-       max-width: 174px;
-     }
-
-    .features-sublist-and{
-    margin-bottom: 39px;
+   .features-sublist:nth-child(4){
+    padding: 20px 50px 19px;
     }
 
-  .features-text-and{
-    margin-bottom: 21px;
-  }
-
+    .features-sublist:nth-child(6){
+    padding: 20px 37px 35px;
+    }
 @media (min-width: $tablet-width) {
   /* FEATURES  */
   
     .features-section {
-      padding: 100px 0 74px;
+      padding: 100px 0 75px;
 
       .headline{
         margin-bottom: 96px;
@@ -83,7 +81,7 @@
 
     .features-list {
       gap: 44px 24px;
-      margin-bottom: 78.4px;
+      margin-bottom: 78px;
       justify-content: center;
     }
   
@@ -98,6 +96,8 @@
       margin: 0;
       padding: 20px 45px 32px;
       aspect-ratio: 36/27;
+      min-height: 271px;
+      min-width: 360px;
       gap: 10px;
     }
     
