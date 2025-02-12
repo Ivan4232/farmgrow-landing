@@ -21,3 +21,11 @@ function toggleMenuState() {
   }
 
 navBtnElement.addEventListener('click', toggleMenuState);
+
+
+const videoContainer = document.querySelector('.hero-video');
+const videoButton = videoContainer.querySelector('.hero-video-btn');
+const videoView = videoContainer.querySelector('video');
+
+
+videoButton.addEventListener('click', () => (videoView.pause) ? videoView.play() : videoView.pause());

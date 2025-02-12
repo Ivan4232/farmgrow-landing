@@ -14,15 +14,6 @@
   }
 }
 
-.btn-header-activ {
-  width: 140px;
-    height: 40px;
-    border-radius: 8px;
-    display: none;
-    margin-left: 40px;
-    padding: 4px 0 0 0;
-}
-
 .btn,
 .btn-outline-light {
   font-weight: 500;
@@ -33,6 +24,16 @@
   background: linear-gradient(130deg, #30c917 0%, #279a13 100%);
   min-height: 40px;
   max-width: 140px;
+}
+
+.btn-header-activ {
+  min-width: 162px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1.7px;
+  padding: 4px 0 0 0;
+  opacity: 0;
 }
 
 .btn-primary,
@@ -89,19 +90,12 @@
     }
 }
 
-.btn-header-activ-2 {
-  min-width: 162px;
-    height: 48px;
-      font-size: 18px;
-      margin-right: -2px;
-      letter-spacing: 1.7px;
-  display: none;
-}
-
 .hero-video-btn {
+  position: relative;
+  z-index: 1;
   border-radius: 100%;
-  min-width: 137px;
-  min-height: 137px;
+  width: 137px;
+  height: 137px;
 }
 
 @media (min-width: $tablet-width) {
@@ -113,15 +107,11 @@
     }
   }
 
-  .btn-header-activ-2{
-    display: flex;
-  }
  .btn-outline-light {
    min-width: 177px;
    height: 56px;
    font-size: 18px;
-   margin-top: 0;
-   padding: 0 0 1px 0;
+   margin-bottom: 0;
    letter-spacing: .8px;
    border-radius: 8px;
  }
