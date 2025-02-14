@@ -1,7 +1,7 @@
     /* INFO */
 
 .info-section{
-  padding: 40px 0 30px;
+  padding: 40px 0 52px;
 
   .headline{
     margin-bottom: 47px;
@@ -42,6 +42,21 @@
 }
 }
 
+.info-sublist:nth-child(2),
+.info-sublist:nth-child(3){
+  img{
+    margin-bottom: 11px;
+  }
+}
+
+.info-sublist:nth-child(4){
+  padding-top: 35px;
+}
+
+.info-sublist:nth-child(5){
+  padding-top: 32px;
+}
+
 .info-text{
 display: flex;
   justify-content: center;
@@ -57,11 +72,7 @@ display: flex;
     /* INFO  */
   
     .info-section {
-      padding: 70px 0 118px;
-
-      .headline {
-          margin-bottom: 48px;
-        }
+      padding: 71px 0 118px;
     }
   
     .info-list {
@@ -79,4 +90,8 @@ display: flex;
       display: flex;
       flex-direction: column;
     }
+
+  .info-sublist:nth-child(4) {
+    padding-top: 30px;
+ }
   }

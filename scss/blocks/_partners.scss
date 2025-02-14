@@ -1,19 +1,19 @@
  /* PARTNERS */
 
 .partners-section{
-  padding: 30px 0 50px;
+  padding: 50px 0 47px;
 }
 
 .partners-box{
 display: grid;
 gap: 20px;
 grid-template-columns: repeat(3, 1fr);
-padding: 40px 0;
+padding-bottom: 83px;
 }
 
 .partners-box-two{
 display: grid;
-  gap: 30px;
+  gap: 18px 30px;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -21,17 +21,17 @@ display: grid;
   /* PARTNERS  */
   
     .partners-section {
-      padding: 69px 0 80px;
+      padding: 73px 0 84px;
     .headline {
-     margin-bottom: 2px;
+     margin-bottom: 80px;
     }
   h3.headline{
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 }
     .partners-box {
+      padding-bottom: 105px;
       gap: 60px;
-    padding: 94px 0;
     }
   
     .img-partners,

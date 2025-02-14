@@ -1,9 +1,10 @@
 .hero-section{
   padding-bottom: 40px;
+  padding-top: 96px;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1228px;
   padding: 0 var(--offset);
   margin: 0 auto;
 }
@@ -97,12 +98,12 @@ padding-top: 100px;
   /* HERO  */
   
   .hero-section {
-    padding: 0 50px 50px 0;
+    padding: 110px 0 170px ;
   }
   
   .hero-box {
     display: flex;
-    min-height: 1070px;
+    min-height: 947px;
     gap: 27px;
   }
   
@@ -115,7 +116,7 @@ padding-top: 100px;
   }
 
   .title-hero{
-    padding: 163px 0 0 27px;
+    padding: 165px 0 0 34px;
   }
   
   .title-hero-box {
@@ -137,6 +138,7 @@ padding-top: 100px;
     display: flex;
   }
   .img-hero{
-    margin: -2px 0 0 -12px;
+    max-height: 662px;
+    margin: 0 0 0 -12px;
   }
 }

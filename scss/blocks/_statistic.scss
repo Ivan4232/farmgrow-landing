@@ -53,7 +53,7 @@ img.img-statistic-2 {
   /* TITLE  */
 
   .statistic-section {
-    padding: 56px 0 100px 0;
+    padding: 105px 0 100px 0;
     margin: 0 auto;
 
     .headline {
@@ -79,7 +79,8 @@ img.img-statistic-2 {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    min-width: 1144px;
+    max-width: 1143px;
+    margin-left: 34px;
   }
 
   .statistic-title{
@@ -103,8 +104,9 @@ img.img-statistic-2 {
     min-width: 100px;
   }
   img.img-statistic-2 {
-  margin-top: 60px;
-  margin-left: 57px;
+  margin: 100px 0 0 43px;
+  min-height: 505px;
+  min-width: 473px;
   }
 
   .statistic-text {

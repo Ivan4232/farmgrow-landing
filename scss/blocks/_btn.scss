@@ -48,7 +48,8 @@
   border-radius: 8px;
     width: 138px;
     height: 40px;
-    padding: 13px 14px 10px;
+    padding: 10px 14px;
+    letter-spacing: .7px;
 }
 
 .btn-outline-light {
@@ -65,7 +66,8 @@
   width: 140px;
   height: 40px;
   display: block;
-  margin-left: 98px;
+  margin: 0 auto;
+  letter-spacing: 1.1px;
   padding: 12px var(--offset) 10px;
 }
 
@@ -78,6 +80,7 @@
     min-height: 40px;
     min-width: 152px;
     margin: 0 22px 0 auto;
+    padding: 12px 9px 10px 24px;
     gap: 3px;
 
     &::after {
@@ -87,6 +90,7 @@
       background: url(../images/arrow.svg) no-repeat;
       background-size: contain;
       flex-shrink: 0;
+      margin-left: auto;
     }
 }
 
@@ -124,6 +128,7 @@
     margin: 0 auto;
     padding: 0;
     letter-spacing: 1px;
+    border-radius: 8px;
  }
 
  .btn-with-icon {
@@ -136,6 +141,7 @@
  }
  .btn-primary{
   padding: 12px 8px 10px;
+  margin-top: 4px;
   letter-spacing: .8px;
  }
 }
