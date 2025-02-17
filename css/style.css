@@ -133,6 +133,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul,
@@ -198,9 +199,6 @@ img {
   .nav-visible .mobile-menu-btn .span-3 {
     transform: rotate(-45deg);
   }
-  .nav-visible .btn-header-activ {
-    opacity: 1;
-  }
   .nav-list-container {
     display: flex;
     font-weight: 400;
@@ -232,11 +230,6 @@ img {
   gap: 40px;
   align-items: center;
   font-size: 18px;
-}
-
-.nav-sublist a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .mobile-menu-btn {
@@ -294,9 +287,10 @@ img {
     color: var(--text-color);
     font-weight: 400;
     flex-flow: wrap;
+    flex-grow: 1;
   }
-  .nav-sublist {
-    margin-left: 0;
+  .nav-list li:last-child {
+    margin-left: auto;
   }
   .mobile-menu-btn {
     display: none;
@@ -322,6 +316,12 @@ img {
   max-width: 1228px;
   padding: 0 var(--offset);
   margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headline,
@@ -458,10 +458,15 @@ img {
   margin: 0 0 12px 0;
 }
 
-.statistic-box-1 {
+.statistic-box-container {
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+
+.statistic-box-2 {
+  display: flex;
+  justify-content: center;
 }
 
 .statistic-list {
@@ -479,17 +484,12 @@ img {
   padding-right: 24px;
   flex-grow: 1;
   gap: 16px;
+  transition: transform 0.3s ease;
 }
 
 .statistic-text {
   display: flex;
   align-items: center;
-}
-
-img.img-statistic-2 {
-  width: 312px;
-  height: 286px;
-  margin-left: 8px;
 }
 
 .paragraph-title {
@@ -506,7 +506,6 @@ img.img-statistic-2 {
     margin: 4px 0 12px 0;
   }
   .statistic-list {
-    padding-left: 0;
     gap: 33px;
   }
   .statistic-item:hover {
@@ -517,7 +516,7 @@ img.img-statistic-2 {
     padding-right: 50px;
     gap: 24px;
   }
-  .statistic-box-1 {
+  .statistic-box-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -903,9 +902,10 @@ img.img-statistic-2 {
     padding-right: 27px;
   }
   .card-col-2 {
-    padding: 4px 24px 10px 0;
+    padding: 0 24px 0 0;
     flex-grow: 1;
     justify-content: space-between;
+    align-items: center;
   }
   .farm-card-title {
     font-size: 20px;
@@ -995,8 +995,7 @@ img.img-statistic-2 {
     padding-bottom: 105px;
     gap: 60px;
   }
-  .img-partners,
-  .img-partners-two {
+  .img-partners {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
@@ -1326,7 +1325,6 @@ img.img-statistic-2 {
   font-size: 18px;
   letter-spacing: 1.7px;
   padding: 4px 0 0 0;
-  opacity: 0;
 }
 
 .btn-primary,

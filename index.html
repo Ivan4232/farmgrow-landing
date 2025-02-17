@@ -30,7 +30,7 @@
     <div class="wrapper">
       <div class="hero-wrapper">
         <!-- HEADER -->
-        <!-- <header class="header">
+        <header class="header">
           <div class="container container-flex">
             <a class="logo-link" href="#">
               <img class="logo" src="images/logo-two.svg" />
@@ -38,17 +38,19 @@
             <div class="nav">
               <div class="nav-list-container">
                 <ul class="nav-list">
-                  <li class="nav-sublist">
+                  <li>
                     <a href="#">Tokenomics</a>
                   </li>
-                  <li class="nav-sublist">
+                  <li>
                     <a href="#">Statistics</a>
                   </li>
-                  <li class="nav-sublist">
+                  <li>
                     <a href="#">Blog</a>
                   </li>
+                  <li>
+                    <button class="btn btn-header-activ">Start Earning</button>
+                  </li>
                 </ul>
-                <button class="btn btn-header-activ">Start Earning</button>
               </div>
               <button class="mobile-menu-btn">
                 <span class="span-1"></span>
@@ -57,7 +59,7 @@
               </button>
             </div>
           </div>
-        </header> -->
+        </header>
         <!--HERO -->
         <section class="hero-section">
           <div class="container">
@@ -99,8 +101,8 @@
         <!-- TITLE -->
         <section class="statistic-section">
           <div class="container">
-            <div class="statistic-box-1">
-              <div class="statistic-box-2">
+            <div class="statistic-box-container">
+              <div class="statistic-box-1">
                 <div class="statistic-title">
                   <h2 class="headline">Earn Extra Yield</h2>
                   <p class="paragraph-title">Let Harvest do the hard work</p>
@@ -140,18 +142,13 @@
                   </li>
                 </ul>
               </div>
-              <!-- <picture>
-                <source
-                  class="img-statistic-and"
-                  srcset="images/statistics-2.jpg"
-                  media="(min-width: 768px)"
-                /> -->
-              <img
-                class="img-statistic-2"
-                src="images/statistics-2.jpg"
-                alt="APY statistics"
-              />
-              <!-- </picture> -->
+              <div class="statistic-box-2">
+                <img
+                  class="img-statistic-2"
+                  src="images/statistics-2.jpg"
+                  alt="APY statistics"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -287,9 +284,9 @@
         <section class="farm-section">
           <div class="container">
             <h2 class="headline">Farm</h2>
-            <div class="farm-card-box">
+            <div>
               <ul class="farm-list">
-                <li class="farm-item">
+                <li>
                   <div class="farm-card">
                     <div class="card-col card-col-1">
                       <img
@@ -311,7 +308,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="farm-item">
+                <li>
                   <div class="farm-card">
                     <div class="card-col card-col-1">
                       <img
@@ -333,7 +330,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="farm-item">
+                <li>
                   <div class="farm-card">
                     <div class="card-col card-col-1">
                       <img
@@ -364,7 +361,7 @@
           <div class="container">
             <h2 class="headline">Upcoming Pools</h2>
             <ul class="farm-list">
-              <li class="farm-item">
+              <li>
                 <div class="farm-card">
                   <div class="card-col card-col-1">
                     <img
@@ -386,7 +383,7 @@
                   </div>
                 </div>
               </li>
-              <li class="farm-item">
+              <li>
                 <div class="farm-card">
                   <div class="card-col card-col-1">
                     <img
@@ -408,7 +405,7 @@
                   </div>
                 </div>
               </li>
-              <li class="farm-item">
+              <li>
                 <div class="farm-card">
                   <div class="card-col card-col-1">
                     <img
@@ -430,7 +427,7 @@
                   </div>
                 </div>
               </li>
-              <li class="farm-item">
+              <li>
                 <div class="farm-card">
                   <div class="card-col card-col-1">
                     <img
@@ -479,22 +476,18 @@
             <h3 class="headline">Audited By</h3>
             <div class="partners-box-two">
               <img
-                class="img-partners-two"
+                class="img-partners"
                 src="images/haechi-audit.svg"
                 alt="HAECHI AUDIT"
               />
               <img
-                class="img-partners-two"
+                class="img-partners"
                 src="images/peckshield.svg"
                 alt="Peck Shield"
               />
+              <img class="img-partners" src="images/certik.svg" alt="CERTIK" />
               <img
-                class="img-partners-two"
-                src="images/certik.svg"
-                alt="CERTIK"
-              />
-              <img
-                class="img-partners-two"
+                class="img-partners"
                 src="images/least-authority.svg"
                 alt="Least Authority"
               />

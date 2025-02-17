@@ -51,9 +51,6 @@ justify-content: center;
               transform: rotate(-45deg);
             }
           }
-  .btn-header-activ{
-    opacity: 1;
-  }
 }
         
 .nav-list-container {
@@ -89,13 +86,6 @@ justify-content: center;
   gap: 40px;
   align-items: center;
     font-size: 18px;
-  }
-
-.nav-sublist{
-  a{
-    text-decoration: none;
-     color: inherit;
-  }
   }
 
 .mobile-menu-btn{
@@ -161,10 +151,11 @@ z-index: 11;
     color: var(--text-color);
     font-weight: 400;
     flex-flow: wrap;
-  }
-
-  .nav-sublist {
-    margin-left: 0;
+    flex-grow: 1;
+    
+    li:last-child{
+      margin-left: auto;
+    }
   }
 
   .mobile-menu-btn {

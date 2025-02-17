@@ -9,6 +9,12 @@
   margin: 0 auto;
 }
 
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .headline,
 .title-hero-box {
   font-weight: 700;
