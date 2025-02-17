@@ -1,0 +1,125 @@
+    /* FARM */
+.farm-section{
+  padding: 52px 0 30px;
+  display: flex;
+}
+
+.farm-list{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.farm-card{
+  padding: 24px 24px 24px 21px;
+  margin: 0 auto;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 4px 20px 0 rgba(27, 17, 8, 0.1);
+  background: #fff;
+  border-radius: 16px;
+  max-height: 153px;
+}
+.card-col{
+  display: flex;
+  gap: 16px;
+}
+.card-col-2{
+  gap: 26px;
+}
+.card-apy{
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+}
+
+.farm-card-title{
+font-weight: 600;
+  font-size: var(--list-font-size);
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+.card-apy-1,
+.card-subtext{
+  font-weight: 600;
+    font-size: 14px;
+    color: var(--subtext-color);
+}
+.card-apy-1{
+  font-size: var(--text-font-size);
+  margin-top: -3px;
+}
+.card-apy-2{
+  font-weight: 700;
+  font-size: 18px;
+  color: $primary-color;
+}
+
+.farm-img{
+  width: 48px;
+  margin-top: -14px;
+}
+
+@media (min-width: $tablet-width) {
+  /* FARM  */
+  
+    .farm-section {
+      padding: 69px 0 90px;
+    .headline{
+      margin-bottom: 71px;
+    }
+  }
+  .farm-list{
+    gap: 39px;
+  }
+  .farm-card{
+    flex-direction: row;
+    min-width: 744px;
+    box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
+    border-radius: 64px 24px 24px 64px;
+    max-height: 100px;
+    padding: 20px 0px 20px 14px;
+    gap: 27px;
+  }
+
+  .card-col{
+    gap: 13px;
+  }
+  .card-col-1{
+    border-right: 2px solid rgba(42, 169, 21, 0.32);
+  }
+    .card-apy{
+      gap: 14px;
+      margin-left: 6px;
+    }
+  .card-text{
+    display: grid;
+      gap: 5px;
+      padding-right: 27px;
+  }
+    .card-col-2{
+      padding: 0 24px 0 0;
+      flex-grow: 1;
+      justify-content: space-between;
+      align-items: center;
+    }
+        .farm-card-title {
+          font-size: 20px;
+        }
+        .card-apy-1,
+        .card-subtext {
+          font-size: 16px;
+        }
+        .card-apy-2 {
+          font-weight: 700;
+          font-size: 20px;
+        }
+
+  .farm-img {
+    width: 98px;
+    max-height: 62px;
+    margin-top: -3px;
+  }
+}

@@ -1,0 +1,150 @@
+.hero-section{
+  padding-bottom: 40px;
+  padding-top: 96px;
+}
+
+.container {
+  max-width: 1228px;
+  padding: 0 var(--offset);
+  margin: 0 auto;
+}
+
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline,
+.title-hero-box {
+  font-weight: 700;
+  font-size: var(--body-text-font-size);
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title-hero-box{
+  margin-bottom: var(--offset);
+  font-size: var(--hero-title-font-size);
+}
+
+.title {
+  font-weight: 700;
+  font-size: var(--hero-title-font-size);
+  width: 300px;
+  display: flex;
+  text-align: start;}
+  
+  .highlight-color {
+    width: 300px;
+    height: 48px;
+    color: #2aa915;
+  }
+  
+  
+  .primary-color,
+  .statistic-list,
+  .paragraph-title,
+  .subtitle,
+  .title-hero{
+    font-weight: 500;
+  }
+  
+  .subtitle {
+    font-weight: 400;
+    line-height: 162%;
+    color: #000;
+    margin-bottom: 24px;
+    max-width: 245px;
+  }
+  
+  .hero-video {
+    background-image: url(../images/.jpg);
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 9/5.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+    display: none;
+    overflow: hidden;
+
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .hero-video-img {
+    padding-left: 12px;
+  }
+  
+ .fons-three{
+position: fixed;
+width: 100%;
+min-height: 100%;
+padding-top: 100px;
+} 
+
+@media (min-width: 991px) {
+  
+  /* HERO  */
+  
+  .hero-section {
+    padding: 110px 0 170px ;
+  }
+  
+  .hero-box {
+    display: flex;
+    min-height: 947px;
+    gap: 27px;
+  }
+  
+  .headline {
+    font-size: 48px;
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+
+  .title-hero{
+    padding: 165px 0 0 34px;
+  }
+  
+  .title-hero-box {
+    margin-bottom: 53px;
+  }
+  
+  .title {
+    font-size: 72px;
+    width: 552px;
+  }
+  
+  .subtitle {
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+  .hero-video {
+    display: flex;
+  }
+  .img-hero{
+    max-height: 662px;
+    margin: 0 0 0 -12px;
+  }
+}

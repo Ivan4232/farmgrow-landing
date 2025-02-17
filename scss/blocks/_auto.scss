@@ -1,0 +1,40 @@
+    /* AUTO */
+
+.auto-section {
+  padding: 70px 0 50px;
+  display: flex;
+
+.farm-card{
+  gap: 22px;
+}
+}
+
+.farm-card-img {
+  width: 48px;
+  max-height: 44px;
+}
+
+@media (min-width: $tablet-width) {
+  /* AUTO  */
+   .auto-section{
+    padding: 122px 0 73px;
+    .headline {
+        margin-bottom: 71px;
+}
+ .farm-list {
+   gap: 25px;
+ }
+ .farm-card {
+  padding: 20px 0px 20px 0px;
+  gap: 27px;
+}
+.farm-card-img {
+  width: 100px;
+  min-height: 100px;
+  margin-top: -21px;
+}
+.card-col {
+  gap: 25px;
+}
+}
+  }

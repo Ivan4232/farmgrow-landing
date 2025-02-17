@@ -1,0 +1,146 @@
+/* BTN */
+
+.btn {
+  padding: 10px var(--offset);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn,
+.btn-outline-light {
+  font-weight: 500;
+  font-size: var(--text-font-size);
+  text-align: center;
+  border: none;
+  color: var(--body-bg-color);
+  background: linear-gradient(130deg, #30c917 0%, #279a13 100%);
+  min-height: 40px;
+  max-width: 140px;
+}
+
+.btn-header-activ {
+  min-width: 162px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1.7px;
+  padding: 4px 0 0 0;
+}
+
+.btn-primary,
+.btn-outline-light {
+  font-weight: 600;
+  color: var(--primary-color);
+  background: rgba(42, 169, 21, 0.18);
+  padding: 10px 14px;
+}
+
+.btn-primary{
+  border-radius: 8px;
+    width: 138px;
+    height: 40px;
+    padding: 10px 14px;
+    letter-spacing: .7px;
+}
+
+.btn-outline-light {
+  color: #ef3581;
+  border: 2px solid #ee3581;
+  background: #fbe4ee;
+  margin-bottom: 40px;
+  width: 140px;
+    height: 40px;
+    padding: 3px 15px 0;
+}
+
+.btn-features {
+  width: 140px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 1.1px;
+  padding: 12px var(--offset) 10px;
+}
+
+.btn-with-icon{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+    min-height: 40px;
+    min-width: 152px;
+    margin: 0 22px 0 auto;
+    padding: 12px 9px 10px 24px;
+    gap: 3px;
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: url(../images/arrow.svg) no-repeat;
+      background-size: contain;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+}
+
+.hero-video-btn {
+  position: relative;
+  z-index: 1;
+  border-radius: 100%;
+  width: 137px;
+  height: 137px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .cards-section{
+    .btn{
+      font-weight: 600;
+        font-size: var(--list-font-size);
+    }
+  }
+
+ .btn-outline-light {
+   min-width: 177px;
+   height: 56px;
+   font-size: 18px;
+   margin-bottom: 0;
+   letter-spacing: .8px;
+   border-radius: 8px;
+ }
+
+ .btn-features{
+  min-width: 177px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 1px;
+    border-radius: 8px;
+ }
+
+ .btn-with-icon {
+  margin-left: 48px;
+   min-width: 147px;
+   min-height: 46px;
+  padding: 10px 9px 10px 16px;
+  gap: 0;
+  justify-content: start;
+ }
+ .btn-primary{
+  padding: 12px 8px 10px;
+  margin-top: 4px;
+  letter-spacing: .8px;
+ }
+}
