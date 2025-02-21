@@ -9,18 +9,18 @@
       rel="icon"
       type="image/png"
       href="favicon/favicon-96x96.png"
-      sizes="96x96"
+      sizes="32x32"
     />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link
       rel="apple-touch-icon"
-      sizes="180x180"
+      sizes="32x32"
       href="favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <!--end-Favicon-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
@@ -33,7 +33,7 @@
         <header class="header">
           <div class="container container-flex">
             <a class="logo-link" href="#">
-              <img class="logo" src="images/logo-two.svg" />
+              <img class="logo" src="images/logo-two.svg" alt="logo" />
             </a>
             <div class="nav">
               <div class="nav-list-container">
@@ -48,11 +48,13 @@
                     <a href="#">Blog</a>
                   </li>
                   <li>
-                    <button class="btn btn-header-activ">Start Earning</button>
+                    <button class="btn btn-header-activ" type="button">
+                      Start Earning
+                    </button>
                   </li>
                 </ul>
               </div>
-              <button class="mobile-menu-btn">
+              <button class="mobile-menu-btn" type="button">
                 <span class="span-1"></span>
                 <span class="span-2"></span>
                 <span class="span-3"></span>
@@ -66,15 +68,19 @@
             <div class="hero-box">
               <div class="title-hero">
                 <div class="title-hero-box">
-                  <h1 class="title">Earn Yield on</h1>
-                  <span class="title highlight-color">Your Crypto</span>
+                  <h1 class="title">
+                    Earn Yield on
+                    <span class="title highlight-color">Your Crypto</span>
+                  </h1>
                 </div>
                 <p class="subtitle">
                   Put your crypto to work and earn passive income effortlessly.
                   Stake, lend, or invest to maximize your returns securely and
                   efficiently. Start growing your assets today!
                 </p>
-                <button class="btn btn-outline-light">Start Earning</button>
+                <button class="btn btn-outline-light" type="button">
+                  Start Earning
+                </button>
               </div>
               <img
                 class="img-hero"
@@ -84,8 +90,7 @@
             </div>
             <div class="hero-video">
               <iframe
-                width="560"
-                height="315"
+                class="video"
                 src="https://www.youtube.com/embed/TCk6LeLZF0M?si=AyCtodBOA5Y74MLN"
                 title="YouTube video player"
                 frameborder="0"
@@ -162,7 +167,7 @@
               <li class="features-sublist">
                 <img
                   class="features-img"
-                  srcset="images/exchange.png"
+                  src="images/exchange.png"
                   alt="exchange"
                 />
                 <h3 class="features-item">Exchange</h3>
@@ -216,11 +221,11 @@
                   tokens for many other Tokens
                 </p>
               </li>
-              <li class="features-sublist">
+              <li class="features-sublist features-sublist-end">
                 <img
                   class="features-img"
                   src="images/lottery.png"
-                  atl="lottery"
+                  alt="victory"
                 />
                 <p class="features-item">Lottery</p>
                 <p class="features-text">
@@ -229,7 +234,9 @@
                 </p>
               </li>
             </ul>
-            <button class="btn btn-features">Start Earning</button>
+            <button class="btn btn-features" type="button">
+              Start Earning
+            </button>
           </div>
         </section>
         <!-- INFO -->
@@ -257,7 +264,7 @@
                 <p class="info-text">Trade Fee Saved</p>
                 <span class="highlight-color">$ 116.05M</span>
               </li>
-              <li class="info-sublist">
+              <li class="info-sublist info-sublist-end">
                 <img src="images/work.png" alt="LP Earned" />
                 <p class="info-text">LP Earned</p>
                 <span class="highlight-color">$ 24.18M</span>
@@ -304,7 +311,9 @@
                         <span class="card-apy-1">APY</span>
                         <span class="card-apy-2">33.43 %</span>
                       </div>
-                      <button class="btn btn-primary">Start Earning</button>
+                      <button class="btn btn-primary" type="button">
+                        Start Earning
+                      </button>
                     </div>
                   </div>
                 </li>
@@ -326,7 +335,9 @@
                         <span class="card-apy-1">APY</span>
                         <span class="card-apy-2">33.43 %</span>
                       </div>
-                      <button class="btn btn-primary">Start Earning</button>
+                      <button class="btn btn-primary" type="button">
+                        Start Earning
+                      </button>
                     </div>
                   </div>
                 </li>
@@ -348,7 +359,9 @@
                         <span class="card-apy-1">APY</span>
                         <span class="card-apy-2">33.43 %</span>
                       </div>
-                      <button class="btn btn-primary">Start Earning</button>
+                      <button class="btn btn-primary" type="button">
+                        Start Earning
+                      </button>
                     </div>
                   </div>
                 </li>
@@ -379,7 +392,9 @@
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
                     </div>
-                    <button class="btn btn-primary">Start Earning</button>
+                    <button class="btn btn-primary" type="button">
+                      Start Earning
+                    </button>
                   </div>
                 </div>
               </li>
@@ -401,7 +416,9 @@
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
                     </div>
-                    <button class="btn btn-primary">Start Earning</button>
+                    <button class="btn btn-primary" type="button">
+                      Start Earning
+                    </button>
                   </div>
                 </div>
               </li>
@@ -423,7 +440,9 @@
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
                     </div>
-                    <button class="btn btn-primary">Start Earning</button>
+                    <button class="btn btn-primary" type="button">
+                      Start Earning
+                    </button>
                   </div>
                 </div>
               </li>
@@ -445,7 +464,9 @@
                       <span class="card-apy-1">APY</span>
                       <span class="card-apy-2">33.43 %</span>
                     </div>
-                    <button class="btn btn-primary">Start Earning</button>
+                    <button class="btn btn-primary" type="button">
+                      Start Earning
+                    </button>
                   </div>
                 </div>
               </li>
@@ -475,27 +496,33 @@
             </div>
             <h3 class="headline">Audited By</h3>
             <div class="partners-box-two">
-              <img
-                class="img-partners"
-                src="images/haechi-audit.svg"
-                alt="HAECHI AUDIT"
-              />
-              <img
-                class="img-partners"
-                src="images/peckshield.svg"
-                alt="Peck Shield"
-              />
-              <img class="img-partners" src="images/certik.svg" alt="CERTIK" />
-              <img
-                class="img-partners"
-                src="images/least-authority.svg"
-                alt="Least Authority"
-              />
+              <div class="partners-list-img">
+                <img
+                  class="img-partners"
+                  src="images/haechi-audit.svg"
+                  alt="HAECHI AUDIT"
+                />
+                <img
+                  class="img-partners"
+                  src="images/peckshield.svg"
+                  alt="Peck Shield"
+                />
+                <img
+                  class="img-partners"
+                  src="images/certik.svg"
+                  alt="CERTIK"
+                />
+                <img
+                  class="img-partners"
+                  src="images/least-authority.svg"
+                  alt="Least Authority"
+                />
+              </div>
             </div>
           </div>
         </section>
         <!-- CARDS -->
-        <section class="cards-section">
+        <div class="cards-section">
           <div class="container">
             <div class="card-columns">
               <div class="cards-box cards-box-1">
@@ -505,7 +532,7 @@
                   yield with Farm Token and grow your crypto portfolio with
                   every block. Start farming today!
                 </p>
-                <button class="btn">Start Earning</button>
+                <button class="btn" type="button">Start Earning</button>
               </div>
               <div class="cards-box cards-box-2">
                 <h4 class="headline card-title">Contribute and Earn</h4>
@@ -514,11 +541,11 @@
                   Whether staking, providing liquidity, or building—your
                   contributions turn into earnings. Start earning today!
                 </p>
-                <button class="btn">Start Earning</button>
+                <button class="btn" type="button">Start Earning</button>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- AND -->
         <section class="and-section">
           <div class="container">
@@ -532,8 +559,8 @@
                 alt="logotype"
               />
               <div class="and-box-button">
-                <button class="btn btn-secondary btn-with-icon">
-                  <p class="and-box-text">Buy $FARM</p>
+                <button class="btn btn-secondary btn-with-icon" type="button">
+                  <span class="and-box-text">Buy $FARM</span>
                 </button>
               </div>
             </div>
@@ -546,7 +573,7 @@
           <h2 class="footer-headline">Follow us</h2>
           <div class="footer-links-box">
             <ul class="footer-links-list">
-              <li class="footer-link" href="#">
+              <li class="footer-link">
                 <a href="#">
                   <img
                     class="footer-link-img"
@@ -555,7 +582,7 @@
                   />Youtube
                 </a>
               </li>
-              <li class="footer-link" href="#">
+              <li class="footer-link">
                 <a href="#">
                   <img
                     class="footer-link-img"
@@ -564,7 +591,7 @@
                   />Facebook
                 </a>
               </li>
-              <li class="footer-link" href="#">
+              <li class="footer-link">
                 <a href="#">
                   <img
                     class="footer-link-img"
@@ -573,7 +600,7 @@
                   />Telegram
                 </a>
               </li>
-              <li class="footer-link" href="#">
+              <li class="footer-link">
                 <a href="#">
                   <img
                     class="footer-link-img"

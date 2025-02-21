@@ -24,12 +24,17 @@
 
 .and-box-img {
   margin-left: 7px;
+  border-radius: 100%;
 }
 
 .and-box-button{
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+.auto-section::after{
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,4 +64,16 @@
    font-size: 16px;
   margin-right: 7px;
   }
+
+    .and-section::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      background-repeat: no-repeat;
+      display: flex;
+      min-width: 344px;
+      min-height: 388px;
+      background-image: url(../images/decor2.png);
+      margin: -350px 0 0 0px;
+    }
 }

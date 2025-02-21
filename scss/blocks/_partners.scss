@@ -5,13 +5,18 @@
 }
 
 .partners-box{
-display: grid;
+display: flex;
 gap: 20px;
-grid-template-columns: repeat(3, 1fr);
 padding-bottom: 83px;
+justify-content: space-evenly;
 }
 
-.partners-box-two{
+.partners-box-two {
+  display: flex;
+  justify-content: center;
+}
+
+.partners-list-img{
 display: grid;
   gap: 18px 30px;
   grid-template-columns: repeat(2, 1fr);
@@ -28,17 +33,24 @@ display: grid;
   h3.headline{
     margin-bottom: 46px;
   }
+  .partners-box {
+    padding-bottom: 105px;
+    gap: 60px;
+  }
 }
-    .partners-box {
-      padding-bottom: 105px;
-      gap: 60px;
-    }
   
     .img-partners{
     width: 100%;
     object-fit: contain;
     }
-   .partners-box-two {
+   .partners-list-img {
      grid-template-columns: repeat(4, 1fr);
+     width: 100%;
    }
   }
+
+    @media (min-width: 449px){
+      .partners-box{
+        gap: 0;
+      }
+    }

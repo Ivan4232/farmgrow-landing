@@ -4,6 +4,9 @@
   .headline{
     margin-bottom: 38px;
   }
+  img{
+    border-radius: 100%;
+  }
 }
 
 .features-title,
@@ -68,6 +71,16 @@
     .features-sublist:nth-child(6){
     padding: 20px 37px 35px;
     }
+
+.features-sublist-end::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  min-width: 344px;
+  min-height: 388px;
+  background-image: url(../images/decor1.png);
+  margin: 50px -60px 0 0;
+}
 @media (min-width: $tablet-width) {
   /* FEATURES  */
   
@@ -107,6 +120,7 @@
 
     .features-sublist:nth-child(1){
       padding: 27px 45px 26.8px;
+      margin-bottom: 0;
       .features-img {
       margin-bottom: 7.8px;
     }
@@ -169,6 +183,9 @@
   .features-sublist:nth-child(6) {
     padding: 20px 37px 57px;
   }
+    .features-sublist-end::before{
+      display: none;
+    }
 }
 
 @media (min-width: 1002px) {

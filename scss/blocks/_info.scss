@@ -67,7 +67,21 @@ display: flex;
   display: none;
 }
   
-  
+.info-sublist-end::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  min-width: 344px;
+  min-height: 388px;
+  background-image: url(../images/decor2.png);
+  margin: 20px 0px 0 -100px;
+}
+ 
+.info-section::after{
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
     /* INFO  */
   
@@ -93,5 +107,20 @@ display: flex;
 
   .info-sublist:nth-child(4) {
     padding-top: 30px;
+ }
+ .info-sublist-end::before{
+  display: none;
+ }
+
+ .info-section::after{
+  content: "";
+    position: absolute;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    display: flex;
+    min-width: 300px;
+    min-height: 388px;
+    background-image: url(../images/decor2.png);
+    margin: -70px 0 0 0;
  }
   }

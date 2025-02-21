@@ -85,7 +85,8 @@
     .card-columns {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      gap: 22px;
+      justify-items: center;
     }
   
     .cards-box {
@@ -116,8 +117,6 @@
     }
   
     .cards-box-1 {
-      margin-left: 36px;
-
       &::before {
         background-image: url(../images/tractor-two.svg);
         min-height: 223px;
@@ -129,7 +128,7 @@
   
     .cards-box-2 {
       padding-top: 175px;
-
+      
       &::before {
         background-image: url(../images/shovel-two.svg);
         min-height: 240px;
@@ -138,8 +137,33 @@
         margin-top: 8px;
       }
 
-   .card-title {
+      .card-title {
      margin-bottom: 30px;
-   }
+     line-height: 1;
+    }
   }
 }
+
+  @media (min-width: 769px){
+    .cards-box-1{
+      padding-top: 184px;
+      .card-title{
+      margin-bottom: 74px;
+      }
+      .card-text{
+        margin-bottom: 58px;
+      }
+    }
+  }
+
+    @media (min-width: 1092px){
+      .cards-box-1 {
+          padding-top: 179px;
+          .card-title {
+            margin-bottom: 40px;
+          }
+          .card-text {
+            margin-bottom: 35px;
+          }
+        }
+    }

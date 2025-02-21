@@ -35,7 +35,6 @@
   font-weight: 700;
   font-size: var(--hero-title-font-size);
   width: 300px;
-  display: flex;
   text-align: start;}
   
   .highlight-color {
@@ -87,6 +86,11 @@
       object-fit: cover;
     }
   }
+
+  .video{
+    width: 560px;
+    height: 315px;
+  }
   
   .hero-video-img {
     padding-left: 12px;
@@ -98,6 +102,22 @@ width: 100%;
 min-height: 100%;
 padding-top: 100px;
 } 
+
+.hero-section::after{
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  min-width: 344px;
+  min-height: 388px;
+  background-image: url(../images/decor3.png);
+  margin: -160px 0px 0 0;
+}
+
+@media (max-width: $tablet-width) {
+  .hero-section::after {
+    display: none;
+  }
+}
 
 @media (min-width: 991px) {
   
