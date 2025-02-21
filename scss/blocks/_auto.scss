@@ -14,7 +14,7 @@
   max-height: 44px;
 }
 
-.auto-section::after{
+.auto-section::before{
   display: none;
 }
 
@@ -41,7 +41,7 @@
   gap: 25px;
 }
 }
-.auto-section::after {
+.auto-section::before{
   content: "";
   position: absolute;
   pointer-events: none;

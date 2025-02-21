@@ -523,16 +523,10 @@ img {
   margin: 0 0 51px -6px;
 }
 
-.statistic-box-1::after,
-.statistic-box-2::after {
+.statistic-box-1::after {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .statistic-box-2::after {
-    display: none;
-  }
-}
 @media (min-width: 991px) {
   /* TITLE  */
   .statistic-section {
@@ -1032,7 +1026,7 @@ img {
   max-height: 44px;
 }
 
-.auto-section::after {
+.auto-section::before {
   display: none;
 }
 
@@ -1059,7 +1053,7 @@ img {
   .auto-section .card-col {
     gap: 25px;
   }
-  .auto-section::after {
+  .auto-section::before {
     content: "";
     position: absolute;
     pointer-events: none;

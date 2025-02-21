@@ -58,16 +58,8 @@ box-shadow: 0 4px 28px 0 rgba(27, 17, 8, 0.06);
 .paragraph-title {
   margin: 0 0 51px -6px;
 }
-.statistic-box-1::after,
-.statistic-box-2::after {
+.statistic-box-1::after {
   display: none;
-}
-
-@media (min-width: $tablet-width){
-  
-  .statistic-box-2::after {
-    display: none;
-  }
 }
 
 @media (min-width: 991px) {
